@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Defrag"
+date: 2013-04-07 12:34
+comments: true
+categories: 
+draft: true
+---
+
+As of this evening I have an idea in my head for a cheesy design. It's the Windows DEFRAG.EXE block rearrangement, which I might throw together in JS to decorate things. Just for fun.
+
+<img src="/images/defrag.gif" />
+
+Scrolling this post makes the GIF shimmer. Mmmm.

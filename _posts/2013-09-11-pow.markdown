@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Pow"
+date: 2013-09-11 09:16
+comments: true
+categories: 
+---
+
+I know it's pretty old news, but I just have to say that as someone who's messed around with hosts files and apache configs for some years now, I'm freaking love the convenience and lazy simplicity of [Pow](http://pow.cx/).
+
+Even when it's just proxying back to LAMP apps, it's still saving me a bunch of effort. (I've automated that effort with .sh in the past, but Pow is just soooo easy.)

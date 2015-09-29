@@ -1,25 +1,37 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
+title: About me
+tags:
+modified: 2015-07-29T01:24:00-12:00
 comments: true
 image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: kyeburn.jpg
+  credit: Chris Burgess
+  creditlink: https://www.flickr.com/photos/xurizaemon/8329747186/in/dateposted-public/
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+Kia ora! I'm Chris Burgess, a software developer based in Dunedin, New
+Zealand.
 
-## Minimal Mistakes is all about:
+I'm employed by [Fuzion](http://fuzion.co.nz), where my role is to
+assist organisations in their online work for political and social
+change. I work mostly with open source tools for online campaigning,
+especially Drupal and CiviCRM.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+I was born in Auckland, and grew up playing on the slopes of Mount
+Hobson with views of the Waitemata harbour. I studied at Papakura High
+School and then Auckland University for a bit, then started Ibex Ltd,
+a small web design business.
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+After building Ibex into a small business I was proud of, Ibex became
+a part of Resolver and I enjoyed the opportunity to work with a team
+of skilled people, including Aaron Shipman and Mike McMurtry.
+
+In 2002, fellow Resolver contractor James Tyson and I started Giant
+Robot, and we had a great time building fun projects for interesting
+(and sometimes crazy) clients, including the Green Party of Aotearoa /
+NZ. James left GR in late 2005 to join one of our then customers,
+Pulse Utilities.
+
+GR was my baby from there until 2013, when I joined Fuzion. That's
+where I am today!

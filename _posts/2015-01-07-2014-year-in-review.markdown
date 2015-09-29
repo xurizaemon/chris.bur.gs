@@ -1,0 +1,81 @@
+---
+layout: post
+title: "2014 Year in review"
+date: 2015-01-07 11:14
+comments: true
+categories:
+---
+
+It's the start of 2015 and I figured why not follow on from the year
+in reviews offered everywhere with my own. Hi! I'm writing this for my
+own reflection more than for public consumption, but sharing it might
+just encourage me to be a bit more engaged. MAYBE.
+
+At the start of 2015 I'm thinking most about family - we had Christmas
+in Dunedin with Saira's parents and my brother James visited, but we
+missed being in Auckland with the rest of our families. Living in
+Dunedin puts us further from our siblings and parents, but living here
+means more time for our family nucleus - something we both feel pretty
+strongly about. Times like Christmas throw this choice into pretty
+stark relief though.
+
+In 2014 I reflected a lot on my career path after some conversations
+with our school principal when she had her regular principal's
+appraisal. I saw her approach to career which takes a longer term view
+to professional development than I had considered, and wanted to
+establish similar perspective for myself. This forced me to ask
+whether a larger workplace might give more opportunity to learn from
+teammates - currently I'm in a solitary office with a team of four~six
+distributed about NZ, and I sense that I could be learning more FIXME
+"be the lions tail".
+
+My approach to this was heavily influenced by a single tweet FIXME
+which I saw from @br3nda while attending FIXME. I value both our
+family's happy life in Dunedin and my supportive employer, and I
+realised that by doubling down on that commitment and improving my
+existing situation rather than seeking to replace it, I could ramp up
+my learning and improve things for our team.
+
+I got sunk into improving our processes - something I'd felt strongly
+about since joining the team a year or two ago, but had lacked
+confidence about driving change with, not wanting to impose change
+on a team that I was the newest member of.
+
+In 2015 I'll work to strengthen this aspect of my work, and extend it
+into other areas of my life.
+
+One element of the work environment which I think we'd struggled with
+was a sense of teamplay - making sure that team members are informed
+of changes and the reasons for them, that configurations are
+documented and so forth. My aim was to improve visibility across the
+organisation so that we all had a sense of what the wider team was
+engaged in. This is an ongoing project but I think the results have
+been good for us so far. Over the summer break I've taken advantage of
+the quiet time to further improve systems by automating monitoring,
+reporting and informing - aspects of the business infrastructure which
+I think had previously left a lot of the operation "off the radar".
+
+Election 2014 was a big part of the year. Being in the engine room of
+the Green Party's election process also helped inform some of my
+thoughts on teamplay in projects. The election result wasn't stellar
+but it was the predictable outcome.
+
+I studied Te Ara Reo Maori level 2 with Te Wananga o Aotearoa, which
+was a really good experience. I recommend the course massively (it was
+a zero-fee course, in the local community rooms with about two dozen
+students). Kia ora Ritchie and Shaun for your great work this year
+... I learned a lot, including a good reminder that being a student
+requires commitment. I came away with much more confidence than I
+started, which was what I hoped to achieve; I don't think I'll enrol
+again next year - I'd love to but I want to focus my efforts closer to
+family and work for now.
+
+
+
+* Election 2014
+* BoT chair
+* BCAC rates
+* Happy teams tweet
+* NZG computing, wordpress hack
+* Drupal South 2014
+*

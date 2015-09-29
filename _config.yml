@@ -1,7 +1,7 @@
 # Site wide configuration
 
-title:            Site Title
-locale:           en_US
+title:            Some Words Came Out My Head
+locale:           en_NZ
 url:
 
 
@@ -26,23 +26,23 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Chris Burgess
   avatar: bio-photo.jpg
-  bio: "Describe your self."
+  bio: "Thinking about future societies, living in the present. Humane web techno-generator for social change orgs. Believes in stories. Dunedin, NZ"
   email:
-  disqus-shortname:
-  twitter: #username
-  facebook: #username
+  disqus-shortname: xurizaemon
+  twitter: xurizaemon
+  facebook:
   google:
-    plus: #username
-    analytics:
+    plus:
+    analytics: UA-976996-1
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  github: xurizaemon
+  stackoverflow: # 43034/chris-burgess
+  linkedin: xurizaemon
   xing: #username
   instagram: #username
   lastfm: #username
