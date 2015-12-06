@@ -58,5 +58,5 @@ owner:
   codepen: #username
   keybase: xurizaemon
 
-include: [".htaccess", "keybase.txt"]
+include: [".htaccess", "keybase.txt", "pinterest-5492d.html"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "deploy"]
