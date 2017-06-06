@@ -1,0 +1,10 @@
+---
+layout: post
+title: "CiviCon 2017 recap"
+modified:
+categories:
+excerpt: @hubot is example.org ssl ok?
+tags: []
+date: 2017-05-22T10:32:00+13:00
+comments: true
+---
