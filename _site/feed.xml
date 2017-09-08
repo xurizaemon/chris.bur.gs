@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2015-12-13T08:33:58+13:00</updated>
+<updated>2017-09-08T17:21:42+12:00</updated>
 <id>/</id>
 <author>
   <name>Chris Burgess</name>
@@ -16,29 +16,74 @@
   
 
 <entry>
-  <title type="html"><![CDATA[Nest cam highlights]]></title>
-  <link rel="alternate" type="text/html" href="/blackbird-nestcam-highlights/" />
-  <id>/blackbird-nestcam-highlights</id>
-  <published>2015-12-05T06:45:00+13:00</published>
-  <updated>2015-12-05T06:45:00+13:00</updated>
+  <title type="html"><![CDATA[I'm leaving Fuzion today!]]></title>
+  <link rel="alternate" type="text/html" href="/thanks-fuzion/" />
+  <id>/thanks-fuzion</id>
+  <published>2017-06-06T19:45:00+12:00</published>
+  <updated>2017-06-06T19:45:00+12:00</updated>
   <author>
     <name>Chris Burgess</name>
     <uri></uri>
     
   </author>
   <content type="html">
-    &lt;p&gt;Some highlights from the nestcam so far -&lt;/p&gt;
+    &lt;p&gt;Today is my last day working for Fuzion! It’s been a great experience. For the last four years I’ve enjoyed being part of the Fuzion team, supporting non-profit and charitable orgs (and the odd business!), working to support their efforts in online campaigns. I’ve also had a fantastic opportunity to work with the CiviCRM community worldwide, and it’s been a privilege to be part of this.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://youtu.be/HXfnCOz3jH8?t=40m30s&quot;&gt;Three of the four eggs hatch here&lt;/a&gt;. I didn’t expect the fourth to come through after this, it seemed like too long an interval.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://youtu.be/SrfWw-Oc8xI?t=1h26m12s&quot;&gt;The fourth egg hatched the next morning&lt;/a&gt;, yay!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.odt.co.nz/video/news/dunedin/366458/birds-eye-view-dunedin-nest-cam-captures-antics&quot;&gt;“Dunedin nest cam captures antics”&lt;/a&gt; in the ODT.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;I joined Fuzion in 2013, but my connection to Pete runs back to a decade ago, and hopefully far into the future too. He’s been a hugely supportive employer and really has his priorities screwed on right. Thanks Pete :D&lt;/p&gt;
 
-&lt;p&gt;These little creatures are blurry - it’s hilarious how the camera gets the nest in sharp relief, and the chicks are basically a blurry mess. Also this weekend has been quite windy and the nest seems to have moved a few inches, so the footage from yesterday was not very well positioned.&lt;/p&gt;
+&lt;p&gt;I’ve enjoyed the Drupal &amp;amp; CiviCRM parts of our work, but more importantly the community aspects of what we achieve. I’m so grateful for the support to learn and contribute that Fuzion has offered in that time, and for all the many lessons I’ve learned along the way.&lt;/p&gt;
+
+&lt;p&gt;I don’t know yet whether my next gig will include any CiviCRM requirements, but I do plan to stay involved. Civi folks - should you ever find yourself near the bottom of the globe in Dunedin, get in touch! We have some excellent breweries I’d like to show you …&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/thanks-fuzion/&quot;&gt;I&#39;m leaving Fuzion today!&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on June 06, 2017.&lt;/p&gt;
+  </content>
+</entry>
 
 
-    &lt;p&gt;&lt;a href=&quot;/blackbird-nestcam-highlights/&quot;&gt;Nest cam highlights&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on December 05, 2015.&lt;/p&gt;
+  
+
+<entry>
+  <title type="html"><![CDATA[Hubot SSLLabs]]></title>
+  <link rel="alternate" type="text/html" href="/hubot-ssllabs/" />
+  <id>/hubot-ssllabs</id>
+  <published>2017-06-06T19:45:00+12:00</published>
+  <updated>2017-06-06T19:45:00+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Tonight I spent a few minutes on the couch rolling a &lt;a href=&quot;https://github.com/xurizaemon/hubot-ssllabs&quot;&gt;hubot-ssllabs plugin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It uses Qualys SSL Labs API to check your site’s SSL config and report back in your project chat.&lt;/p&gt;
+
+&lt;p&gt;Enjoy :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/hubot-ssllabs-initial-commit.gif&quot; alt=&quot;initial commit&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/hubot-ssllabs/&quot;&gt;Hubot SSLLabs&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on June 06, 2017.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[CiviCon 2017 recap]]></title>
+  <link rel="alternate" type="text/html" href="/civicon-2017/" />
+  <id>/civicon-2017</id>
+  <published>2017-05-22T09:32:00+12:00</published>
+  <updated>2017-05-22T09:32:00+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Oops.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/civicon-2017/&quot;&gt;CiviCon 2017 recap&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on May 22, 2017.&lt;/p&gt;
   </content>
 </entry>
 
@@ -59,7 +104,8 @@
   <content type="html">
     &lt;p&gt;Outside our bedroom window and beside the front door, a blackbird has nested in the rose bushes. After watching her for a few days at breakfast and saying hello out the bedroom window, we added a nest cam for a better viewpoint.&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/JKlW9DHOFYg&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/c/ChrisBurgess/live&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; style=&quot;border: 1px solid #666; margin-bottom: 20px;&quot;&gt;&lt;/iframe&gt;
+
 &lt;p&gt;&lt;em&gt;&lt;a href=&quot;https://youtu.be/JKlW9DHOFYg&quot;&gt;nest cam on YouTube&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;I was cautious about installing the camera, as I thought there were no eggs and had read that birds are more likely to abandon their nesting if they aren’t invested fully. Turned out there were four eggs but the nest was quite deep and they weren’t visible when holding a camera out the window to get a view.&lt;/p&gt;
@@ -856,151 +902,6 @@ It is truly important that everyone has that opportunity, which makes this proje
 &lt;p&gt;Both Atom &amp;amp; its Remote Edit plugin are great tools - thanks @sveale and the Atom team for your work. I’m still flapping between Atom and Emacs on the desktop, but I’ll be sticking with Tramp for this task. Implementing a Tramp style UX on Atom would be a fun project.&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;/atom-remote-edit-vs-tramp/&quot;&gt;Atom Remote Edit UI &amp; speed of opening remote files&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on April 24, 2015.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Trajectory, 2015]]></title>
-  <link rel="alternate" type="text/html" href="/trajectory-2015/" />
-  <id>/trajectory-2015</id>
-  <published>2015-02-19T20:44:00+13:00</published>
-  <updated>2015-02-19T20:44:00+13:00</updated>
-  <author>
-    <name>Chris Burgess</name>
-    <uri></uri>
-    
-  </author>
-  <content type="html">
-    &lt;p&gt;Hi 2015! I’ve got plans for you.&lt;/p&gt;
-
-&lt;p&gt;Life’s good at present - I enjoyed 2014 working with &lt;a href=&quot;https://fuzion.co.nz&quot;&gt;Fuzion Aotearoa&lt;/a&gt;, I’m excited to see what 2015 can bring.&lt;/p&gt;
-
-&lt;p&gt;Workwise I’ve spent a lot of the summer break thinking about our company’s improving our internal systems for collaboration and teamwork - we’re a small distributed team and I’m&lt;/p&gt;
-
-&lt;p&gt;OK so here’s a set of 2015 goals.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Walk _____m / week&lt;/li&gt;
-  &lt;li&gt;Stretch session &lt;em&gt;n&lt;/em&gt; times a week
-*
-*&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here’s a set of intents, things I’m still working out how to make measurable.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Teamwork&lt;/li&gt;
-  &lt;li&gt;Diligence
-*&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;teamwork&quot;&gt;Teamwork&lt;/h2&gt;
-
-&lt;p&gt;I like that 2015 is the Year of the Sheep. Henry tells me “it’s the worst year of the Chinese Zodiac, they hate it over there”. I love &lt;em&gt;Caprinae&lt;/em&gt;, and the isolation of remote work was a big takeaway from 2014 for me (and a driver for focussing on improving our company teamplay). Sheep and goats are about community for me, and one of my goals for this year is being part of an everyday community.&lt;/p&gt;
-
-&lt;h2 id=&quot;diligence&quot;&gt;Diligence&lt;/h2&gt;
-
-&lt;p&gt;Recently I took a day to focus on my professional development trajectory for the year, and as part of the day’s reflection took a walk through the Botanical Gardens. In the flowing waters of the Leith was a forgotten shopping trolley, which I sketched, and ended up with this.&lt;/p&gt;
-
-&lt;p&gt;I have no idea why. Anyway …&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/trajectory-2015/&quot;&gt;Trajectory, 2015&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on February 19, 2015.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[2014 Year in review]]></title>
-  <link rel="alternate" type="text/html" href="/2014-year-in-review/" />
-  <id>/2014-year-in-review</id>
-  <published>2015-01-07T11:14:00+13:00</published>
-  <updated>2015-01-07T11:14:00+13:00</updated>
-  <author>
-    <name>Chris Burgess</name>
-    <uri></uri>
-    
-  </author>
-  <content type="html">
-    &lt;p&gt;It’s the start of 2015 and I figured why not follow on from the year
-in reviews offered everywhere with my own. Hi! I’m writing this for my
-own reflection more than for public consumption, but sharing it might
-just encourage me to be a bit more engaged. MAYBE.&lt;/p&gt;
-
-&lt;p&gt;At the start of 2015 I’m thinking most about family - we had Christmas
-in Dunedin with Saira’s parents and my brother James visited, but we
-missed being in Auckland with the rest of our families. Living in
-Dunedin puts us further from our siblings and parents, but living here
-means more time for our family nucleus - something we both feel pretty
-strongly about. Times like Christmas throw this choice into pretty
-stark relief though.&lt;/p&gt;
-
-&lt;p&gt;In 2014 I reflected a lot on my career path after some conversations
-with our school principal when she had her regular principal’s
-appraisal. I saw her approach to career which takes a longer term view
-to professional development than I had considered, and wanted to
-establish similar perspective for myself. This forced me to ask
-whether a larger workplace might give more opportunity to learn from
-teammates - currently I’m in a solitary office with a team of four~six
-distributed about NZ, and I sense that I could be learning more FIXME
-“be the lions tail”.&lt;/p&gt;
-
-&lt;p&gt;My approach to this was heavily influenced by a single tweet FIXME
-which I saw from @br3nda while attending FIXME. I value both our
-family’s happy life in Dunedin and my supportive employer, and I
-realised that by doubling down on that commitment and improving my
-existing situation rather than seeking to replace it, I could ramp up
-my learning and improve things for our team.&lt;/p&gt;
-
-&lt;p&gt;I got sunk into improving our processes - something I’d felt strongly
-about since joining the team a year or two ago, but had lacked
-confidence about driving change with, not wanting to impose change
-on a team that I was the newest member of.&lt;/p&gt;
-
-&lt;p&gt;In 2015 I’ll work to strengthen this aspect of my work, and extend it
-into other areas of my life.&lt;/p&gt;
-
-&lt;p&gt;One element of the work environment which I think we’d struggled with
-was a sense of teamplay - making sure that team members are informed
-of changes and the reasons for them, that configurations are
-documented and so forth. My aim was to improve visibility across the
-organisation so that we all had a sense of what the wider team was
-engaged in. This is an ongoing project but I think the results have
-been good for us so far. Over the summer break I’ve taken advantage of
-the quiet time to further improve systems by automating monitoring,
-reporting and informing - aspects of the business infrastructure which
-I think had previously left a lot of the operation “off the radar”.&lt;/p&gt;
-
-&lt;p&gt;Election 2014 was a big part of the year. Being in the engine room of
-the Green Party’s election process also helped inform some of my
-thoughts on teamplay in projects. The election result wasn’t stellar
-but it was the predictable outcome.&lt;/p&gt;
-
-&lt;p&gt;I studied Te Ara Reo Maori level 2 with Te Wananga o Aotearoa, which
-was a really good experience. I recommend the course massively (it was
-a zero-fee course, in the local community rooms with about two dozen
-students). Kia ora Ritchie and Shaun for your great work this year
-… I learned a lot, including a good reminder that being a student
-requires commitment. I came away with much more confidence than I
-started, which was what I hoped to achieve; I don’t think I’ll enrol
-again next year - I’d love to but I want to focus my efforts closer to
-family and work for now.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Election 2014&lt;/li&gt;
-  &lt;li&gt;BoT chair&lt;/li&gt;
-  &lt;li&gt;BCAC rates&lt;/li&gt;
-  &lt;li&gt;Happy teams tweet&lt;/li&gt;
-  &lt;li&gt;NZG computing, wordpress hack&lt;/li&gt;
-  &lt;li&gt;Drupal South 2014
-*&lt;/li&gt;
-&lt;/ul&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/2014-year-in-review/&quot;&gt;2014 Year in review&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on January 07, 2015.&lt;/p&gt;
   </content>
 </entry>
 
