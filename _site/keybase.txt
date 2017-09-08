@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/xurizaemon
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://chris.bur.gs
+  * I am xurizaemon (https://keybase.io/xurizaemon) on keybase.
+  * I have a public key with fingerprint DD4D 0C01 42D3 2778 62D4  A291 BA1A BFA3 011A EE11
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.8.25"
+        },
+        "key": {
+            "eldest_kid": "0101598232af1eab735b08135648454cf00d401344dc31b6f6b5e061fae93add46960a",
+            "fingerprint": "dd4d0c0142d3277862d4a291ba1abfa3011aee11",
+            "host": "keybase.io",
+            "key_id": "ba1abfa3011aee11",
+            "kid": "0101598232af1eab735b08135648454cf00d401344dc31b6f6b5e061fae93add46960a",
+            "uid": "b247d857086b7f272e9d8c90dd304800",
+            "username": "xurizaemon"
+        },
+        "service": {
+            "hostname": "chris.bur.gs",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1449257126,
+    "expire_in": 157680000,
+    "prev": "fa26d69444e2c89d4d37925520baebf9b2d077052a3a80f986df6741cad334e6",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - http://gpgtools.org
+
+owGtklFoFEcYx+8SrYliow+xjTQQNyV9MB4zs7Ozu4cExZRAoLW0JOiLx8zO7N2a
+u9273c2ZaCItKE2gNLEiaLVIEUysgk9SEGmDIF6tWmoERcUQVDSWXkNCFaxQZ+P5
+IPjo27Lf7/99/+//zejy6lhN/OzqX4/FV5dXxn+fYbFu+uj4LoV5vF9J7lKsrCPc
+MPpyaU4oSaVH9DMaiITjNbkeF4ntQVOFaVWKwg8cz5UUSBgJpCmDrREfqUWWiyBM
+9Tg8qkIANdNAKqI2FJTpqsaAAVWNYANr2LIB4BhAFWNuqZARmzBNAAJtKkyVco6J
+SQCVA23HTQs/7zuRRUUWOLAAxIirSNcNgjimyISMQspsqgIIqRAQSmHGC8LXllEW
+nKYW7L2Bf8u+e1/OQVjnhqYDgzDdRjoSJjcsE3CuAmwAEIGB8CvB9/X6zk4qcjJf
+Gav8X3QsEUUb7VJhrIzvBAnW6yfSgVTnfS/0LC8rK5kwzCcjYdifj8gdgqUqPVLM
+cbkMcuGAhyoXhBK1QifqCjE2kaZDRFoV0Zd3fJFyIkLTiTQJQDRHFGVPmyLCiYkx
+FsgyTHkNVZdKDQFGBbNNhjjQdaAhqlID2KZBuE10DC3KVRULokRrFVxPSerSJ03L
+loGTdmnY6wtlcDj+waJYvCb2zuKq6InGltauePVuNz6oiR1++t+p966bUy3zn5SL
+/9Rf3rh396qu+b1b3+e1XVvvtuc2f9XsD0z/X6rbs29Doa881N91LbFk7ouO5mq6
+qEVXwPEfLk3PWuRZqYG1TBrj8/sL3d1frk//tezi4otHDiaPftagz/2hri2fG+74
+xR3RclWHd5vaRw9OWON//3b1wPnJ9pbCqgNbOuqyo52lS+nCyO0qUAz2/7u5dOPE
+uvqpb2/OfEzazhQvnCwPzO3b07jNK6CvD956cm9s6v7l7zofjh/9+dj4iublP237
+c/ibwTvVtXc71wysPW2bE/mZjJX7fGzq+4ezbUs+fNfasGboSiZz6MjE0OPnm9rW
+/di0kkzA2KeNLwA=
+=1DiF
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/xurizaemon
+
+==================================================================
+

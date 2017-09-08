@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Some Words Came Out My Head</title>
+<generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2015-12-13T08:33:58+13:00</updated>
+<id>/</id>
+<author>
+  <name>Chris Burgess</name>
+  <uri>/</uri>
+  
+</author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Nest cam highlights]]></title>
+  <link rel="alternate" type="text/html" href="/blackbird-nestcam-highlights/" />
+  <id>/blackbird-nestcam-highlights</id>
+  <published>2015-12-05T06:45:00+13:00</published>
+  <updated>2015-12-05T06:45:00+13:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Some highlights from the nestcam so far -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/HXfnCOz3jH8?t=40m30s&quot;&gt;Three of the four eggs hatch here&lt;/a&gt;. I didn’t expect the fourth to come through after this, it seemed like too long an interval.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/SrfWw-Oc8xI?t=1h26m12s&quot;&gt;The fourth egg hatched the next morning&lt;/a&gt;, yay!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.odt.co.nz/video/news/dunedin/366458/birds-eye-view-dunedin-nest-cam-captures-antics&quot;&gt;“Dunedin nest cam captures antics”&lt;/a&gt; in the ODT.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These little creatures are blurry - it’s hilarious how the camera gets the nest in sharp relief, and the chicks are basically a blurry mess. Also this weekend has been quite windy and the nest seems to have moved a few inches, so the footage from yesterday was not very well positioned.&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;/blackbird-nestcam-highlights/&quot;&gt;Nest cam highlights&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on December 05, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Blackbird nest & rPi cam]]></title>
+  <link rel="alternate" type="text/html" href="/blackbird-nestcam/" />
+  <id>/blackbird-nestcam</id>
+  <published>2015-12-05T06:45:00+13:00</published>
+  <updated>2015-12-05T06:45:00+13:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Outside our bedroom window and beside the front door, a blackbird has nested in the rose bushes. After watching her for a few days at breakfast and saying hello out the bedroom window, we added a nest cam for a better viewpoint.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/JKlW9DHOFYg&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;em&gt;&lt;a href=&quot;https://youtu.be/JKlW9DHOFYg&quot;&gt;nest cam on YouTube&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I was cautious about installing the camera, as I thought there were no eggs and had read that birds are more likely to abandon their nesting if they aren’t invested fully. Turned out there were four eggs but the nest was quite deep and they weren’t visible when holding a camera out the window to get a view.&lt;/p&gt;
+
+&lt;p&gt;If making any changes near the nest, I’ll watch her from the breakfast table, and get to work with any changes when she breakfasts soon after dawn. She knows we’re here as she can see us in the bedroom window, so I think she’s decided we’re mostly harmless, if noisy.&lt;/p&gt;
+
+&lt;p&gt;There was a bit of crawling around in the roof to get a Raspberry Pi within range of the nest, and some small holes drilled - yay for being a homeowner, I can drill where I like! Have to go back up there and wire the Pi power off the porch light so I can remove the extension cable snaking into the laundry ceiling.&lt;/p&gt;
+
+&lt;p&gt;The rPi is running Raspbian Jessie, and the camera is a Microsoft HD-3000. From the feel of the base I thought I’d be able to drill mounting holes into the camera, but it turns out the base was steel and broke a drill bit. I make a small wooden mount that the base slots into, so I can affix that to the underside of the eave.&lt;/p&gt;
+
+&lt;p&gt;Initially I used &lt;a href=&quot;http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome&quot;&gt;Motion&lt;/a&gt; to capture the stream, which worked pretty much out of the box. For security &amp;amp; bandwidth reasons I decided to push the stream out to a CDN for viewing, so after a day of Motion I swapped to &lt;code&gt;avconv&lt;/code&gt; last night, and am now pushing it to YouTube (hence the embed above).&lt;/p&gt;
+
+&lt;p&gt;Since night is too dark to see activity, I’m deactivating the stream from dark (10pm) until dawn (5:30am). Running the &lt;code&gt;avconv&lt;/code&gt; stream inside a &lt;code&gt;tmux&lt;/code&gt; session to observe output - expected to have to do more to keep it running TBH, since video encoding, but so far it’s fine.&lt;/p&gt;
+
+&lt;p&gt;There’s not really a lot of “how to” to this, since it worked out of the box after installing &lt;code&gt;libav-tools&lt;/code&gt;. Still I can share the successful results of some trial and error :)&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/xurizaemon/e338363d550016bcc8d6.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;em&gt;Cron entries to start &amp;amp; stop a named tmux session for the stream.&lt;/em&gt;&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/xurizaemon/795f1f8fab9dab448f74.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;em&gt;Shell script to run the actual encode.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;YouTube seems to ignore streams without audio, so this adds silent audio channel.&lt;/li&gt;
+  &lt;li&gt;Submits FLV - YouTube grumbles about “unsupported codec” occasionally in the video manager, but &lt;code&gt;-c:v libx264&lt;/code&gt; doesn’t encode efficiently on the Pi. Need to play with this.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pushing off to CDN and back for viewing introduces a short delay, so if I need to adjust the camera I swap back to Motion for a few minutes - it’s much faster for local only delivery. It’s probably possible to run the two side by side.&lt;/p&gt;
+
+&lt;p&gt;Quite impressed with what the rPi and cheap camera can do here, and happy that YouTube appear to be offering unlimited free rtmp:// broadcast. I did check out Twitch.tv and Ustream, but found it easier to navigate YouTube’s live broadcast setup than the others.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/blackbird-nestcam/&quot;&gt;Blackbird nest &amp; rPi cam&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on December 05, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Letter to Santa]]></title>
+  <link rel="alternate" type="text/html" href="/letter-to-santa/" />
+  <id>/letter-to-santa</id>
+  <published>2015-12-02T07:45:00+13:00</published>
+  <updated>2015-12-02T07:45:00+13:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Just a quick post ‘cos I’m doing &lt;a href=&quot;https://nzsecretsanta.nzpost.co.nz/&quot;&gt;#nzsecretsanta&lt;/a&gt; this year and have been wishing my secretsanta recipient posted more about what they want. So here’s me paying it forward by saying what I like/where I’m at!&lt;/p&gt;
+
+&lt;p&gt;Last year I got some Sharpie sunglasses and a set of a dozen Sharpies - I really enjoyed the strong bright tones of the pens, which went well with my contour drawing style and liking for strong blocks of colour.&lt;/p&gt;
+
+&lt;p&gt;In 2016 I will be -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Crafting with wood (rediscovering this)&lt;/li&gt;
+  &lt;li&gt;Sketching&lt;/li&gt;
+  &lt;li&gt;Playing with technology lots&lt;/li&gt;
+  &lt;li&gt;Building (or finding) a team environment that supports ongoing learning&lt;/li&gt;
+  &lt;li&gt;Studying Mandarin (with Rowan, 6)&lt;/li&gt;
+  &lt;li&gt;Practicing Tae Kwon Do (with Hunter, 8)&lt;/li&gt;
+  &lt;li&gt;Riding bikes and playing outdoors with family&lt;/li&gt;
+  &lt;li&gt;Playing futsal / indoor netball / anything with balls&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/blackbird-nestcam&quot;&gt;Watching blackbirds hatch outside our window&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We’re going up to Auckland in a few weeks, looking forward to a summer in the north.&lt;/p&gt;
+
+&lt;p&gt;Right now I’m building the 2016 election website for the Australian Green Party, enjoying working with the various tools in play. They have a great distributed team and a lively mix of skills on deck.&lt;/p&gt;
+
+&lt;p&gt;I may update this, it feels like a good “forward reflection” :)&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/letter-to-santa/&quot;&gt;Letter to Santa&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on December 02, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[KoalaSafe first impressions]]></title>
+  <link rel="alternate" type="text/html" href="/koalasafe-part-1/" />
+  <id>/koalasafe-part-1</id>
+  <published>2015-11-14T11:36:10+13:00</published>
+  <updated>2015-11-14T11:36:10+13:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;A few months back I purchased a KoalaSafe off Kickstarter - at the time I didn’t feel a pressing need for it, but the project hit a chord with me and I wanted to support it.&lt;/p&gt;
+
+&lt;p&gt;After it arrived I reflected on how we use devices as a family, and decided not to plug it in. Cue forward to a couple of months later (last night) and Saira and I were talking about Minecraft, playing versus watching videos, and how to positively engage kids towards active engagement.&lt;/p&gt;
+
+&lt;p&gt;I proposed that instead of prescriptive, negative approach (“get off the device”, “you should be playing not watching”), we should be embracing our kids interests and engaging positively (“show me how to build a snow golem”, “tell me what’s happening here”).&lt;/p&gt;
+
+&lt;p&gt;Saira asked me to keep an eye on usage over the weekends (peak times - I’d &lt;em&gt;estimate&lt;/em&gt; the boys have about 3H/day screen time on weekends, and about 1H weekdays), and for us to review it after a bit of play. That reminded me that the KoalaSafe recorded usage stats (this device spent this much time on youtube) and that it was pretty much for this purpose.&lt;/p&gt;
+
+&lt;p&gt;Also, parents use devices too, and seeing that usage might help us engage our own habits in ways that set good examples for our kids.&lt;/p&gt;
+
+&lt;p&gt;So I found the KoalaSafe (which I’d taken to work and stashed), and plugged it in this morning. It’s going OK.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Internet seems to be a bit flaky on some devices.&lt;/li&gt;
+  &lt;li&gt;Wish I could budget an amount to be consumed.&lt;/li&gt;
+  &lt;li&gt;Not sure how to control from laptop!&lt;/li&gt;
+  &lt;li&gt;Can I hack on the platform?&lt;/li&gt;
+  &lt;li&gt;Can I change the SSID?&lt;/li&gt;
+  &lt;li&gt;Shared device - Parent mode&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;https://www.youtube.com/watch?v=HUgv5MDF0cQ&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/koalasafe-part-1/&quot;&gt;KoalaSafe first impressions&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on November 14, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Mandarin lessons]]></title>
+  <link rel="alternate" type="text/html" href="/learning/mandarin-lessons/" />
+  <id>/learning/mandarin-lessons</id>
+  <published>2015-11-14T11:16:10+13:00</published>
+  <updated>2015-11-14T11:16:10+13:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Hunter got a do-bok for Tae Kwon Do and I knew Rowan was impressed with it, so in Australia I picked up a kung-fu suit for Rowan at the Sydney markets.&lt;/p&gt;
+
+&lt;p&gt;About a week later he announced at dinner that he’d like to learn Chinese, please. Saira taught him to count to ten, say hello and thankyou, and that was as best we could do with not knowing much Chinese to speak.&lt;/p&gt;
+
+&lt;p&gt;Rowan persisted in asking, and via the NZ China Friendly Society’s free weekly adult introductory classes (contact details) I found out that there is a Chinese school on Sundays in Dunedin, where you can learn Chinese art, Mandarin language, and Chinese dance.&lt;/p&gt;
+
+&lt;p&gt;We tried a language lesson, and he was keen but the teacher indicated it would be hard for a student with no background to support him to catch up with a class of students who have Mandarin at home. Saira and I talked about this and decided to see if the art classes held his interest and gave him a foothold, so we did a couple of weeks of that.&lt;/p&gt;
+
+&lt;p&gt;He thought that was ok, but after a couple of weeks announced from the shower the night before a Sunday session that he’d be going back to the language class now. I’m impressed by this determination.&lt;/p&gt;
+
+&lt;p&gt;So - I’ve doubled down on learning Mandarin myself (enjoying the HelloChinese app on mobile), Rowan is practicing hard and his teacher is delighted to see that he’s as keen as he is.&lt;/p&gt;
+
+&lt;p&gt;I didn’t expect to end up learning Mandarin myself, but after studying Te Reo Maori last year I’m finding I really enjoy the challenge and the experience. Even though I’m not officially a member of the class - just sitting in to help Rowan get his feet on the ground for now.&lt;/p&gt;
+
+&lt;p&gt;(There are also &lt;a href=&quot;http://nzchinasociety.org.nz/21991/mandarin-lessons-for-beginners-2/&quot;&gt;free adult classes in Dunedin&lt;/a&gt;, I haven’t checked them out yet.)&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/learning/mandarin-lessons/&quot;&gt;Mandarin lessons&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on November 14, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Dunedin, let's fly the flags]]></title>
+  <link rel="alternate" type="text/html" href="/dunedin-lets-fly-the-flags/" />
+  <id>/dunedin-lets-fly-the-flags</id>
+  <published>2015-09-28T19:38:10+13:00</published>
+  <updated>2015-09-28T19:38:10+13:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;A year or two back, walking Dunedin and enjoying the details of our buildings, I started tuning into the the abandoned flagpoles that spike the skyline of our city. With our great stock of older architecture, we have a lot of flagpoles - and most of them are bare today.&lt;/p&gt;
+
+&lt;p&gt;My proposal to Dunedin City Council and the property owners of Dunedin is that we run flags up all those poles.&lt;/p&gt;
+
+&lt;p&gt;Right now, New Zealand is &lt;a href=&quot;http://flag.govt.nz&quot;&gt;discussing the flag we’ll fly in the future&lt;/a&gt;, and Dunedin has an opportunity to highlight our city’s architecture and at the same time invite our citizens to engage more in discussions about the future of New Zealand’s flag.&lt;/p&gt;
+
+&lt;p&gt;Most New Zealanders have seen static representations of the various flags under discussion, in print or online. But flags aren’t static things, they twist and fold and hang and stand in the breeze, and they are seen against the sky - not on paper or screen.&lt;/p&gt;
+
+&lt;p&gt;Imagine if, a few weeks from the start of the referendum, every one of those flagpoles across our city had one of the six flags above flying from it. For the next several weeks, flags could swap places every few nights, giving people across the city the chance to see each of the new flags flying. Many would also notice their environment and surrounds anew.&lt;/p&gt;
+
+&lt;p&gt;During the second referendum, we’d repeat the process with the current and proposed flags.&lt;/p&gt;
+
+&lt;p&gt;People here would notice aspects of the city anew as their eyes were drawn to the sky. We’d build appreciation of the urban environment, which I think would benefit property owners. And over the summer tourism period it would be a stand-out feature of our city for visitors to notice.&lt;/p&gt;
+
+&lt;p&gt;By engaging people in the voting process in late 2015 (and early 2016), familiarity with postal voting would be boosted close to the local elections in late 2016. I think boosting postal vote turnout in the flag referendum could only benefit turnout in the local elections to follow.&lt;/p&gt;
+
+&lt;p&gt;What would it take to make this happen? I imagine getting the property owners of buildings across the city to see value in it, and a backer like the DCC supporting it by providing official backing, numerous flags and crew to keep the flags flying around the city. Probably some other ingredients too, but it seems within reach and worth trying.&lt;/p&gt;
+
+&lt;p&gt;Those bare poles have long had me toying with the idea of how an art project might repurpose the abandoned open spaces where the flags once flew through the city … I’d love to see our city skies come to life like that.&lt;/p&gt;
+
+&lt;p&gt;Image credits: Bad photoshoppery by yours truly, the middle four via &lt;a href=&quot;https://www.govt.nz/browse/engaging-with-government/the-nz-flag-your-chance-to-decide/&quot;&gt;Flag Consideration Project&lt;/a&gt;, current NZ flag via &lt;a href=&quot;http://thefourcornersclassroom.wikispaces.com/Group+9+-+Pre-Project&quot;&gt;Four Corners Classroom&lt;/a&gt;, Red Peak via &lt;a href=&quot;http://eveningreport.nz/2015/09/25/bryce-edwards-political-roundup-the-politics-of-nzs-red-peak/&quot;&gt;Evening Report NZ&lt;/a&gt;. No subliminal placement, only for my convenience.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/dunedin-lets-fly-the-flags/&quot;&gt;Dunedin, let&#39;s fly the flags&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on September 28, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Online Voting Trial - submission to Dunedin City Council & outcome]]></title>
+  <link rel="alternate" type="text/html" href="/dunedin-online-voting-submission/" />
+  <id>/dunedin-online-voting-submission</id>
+  <published>2015-09-21T21:20:05+12:00</published>
+  <updated>2015-09-21T21:20:05+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Until recently, a government working group and several local councils had been (fairly quietly) contemplating a live trial of online voting at the 2016 local body elections. Aside from a few articles in the ODT back in 2013, there had been little coverage of this.&lt;/p&gt;
+
+&lt;p&gt;Dunedin City Council’s meeting was today, and over the weekend I had the opportunity to talk to Chris Morris of the ODT and share some concerns about what online voting might mean. I spoke in the public forum at the meeting, and was really happy with the engaged and informed questions that the councillors asked.&lt;/p&gt;
+
+&lt;p&gt;Sadly I don’t have the questions asked in reply, but here’s my submission to the council from today -&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Mayor Cull, Councillors.&lt;/p&gt;
+
+  &lt;p&gt;Thankyou for the opportunity to speak today. I want to applaud your motivations in contemplating online voting. I believe that you seek to improve representation by increasing access and engagement. I wish that online voting would address those issues, but I am here today because the internet is not a secure environment for democracy.&lt;/p&gt;
+
+  &lt;p&gt;I’m an IT developer with clients in many countries, all of whom demand security for their data. Our work has been subjected to penetration testing and to active attacks on the internet, and I’m familiar with the issues involved in securing systems online from the different methods of interference that can be attempted.&lt;/p&gt;
+
+  &lt;p&gt;I’m concerned about a move to online voting because I feel the significant risks involved are being underplayed, and because many of the benefits cited do not hold up to investigation.&lt;/p&gt;
+
+  &lt;p&gt;Security researchers and experts generally agree that online voting has substantial risks of vulnerability. A secret ballot poses an especially hard problem for securing when there is no physical evidence of the actual votes placed. There are multiple opportunities for attackers, and little scope for remedy or recourse if the electoral process is abused.&lt;/p&gt;
+
+  &lt;p&gt;A group of American researchers describe their investigation of a 2010 online voting trial as follows: “Within 48 hours of the system going live, we had gained near- complete control of the election server. We successfully changed every vote and revealed almost every secret ballot. Election officials did not detect our intrusion for nearly two business days—and might have remained unaware for far longer had we not deliberately left a prominent clue.” (&lt;a href=&quot;https://jhalderm.com/pub/papers/dcvoting-fc12.pdf&quot;&gt;Halderman et al. “Attacking the Washington, D.C. Internet Voting System” Proc. 16th Conference on Financial Cryptography &amp;amp; Data Security, Feb. 2012&lt;/a&gt;)&lt;/p&gt;
+
+  &lt;p&gt;Security expert Bruce Schneier summed up the state of his field in 2001. “Building a secure Internet-based voting system is a very hard problem, harder than all the other computer security problems we’ve attempted and failed at. I believe that the risks to democracy are too great to attempt it.” (&lt;a href=&quot;https://www.schneier.com/crypto-gram/archives/2001/0215.html#10&quot;&gt;Bruce Schneier, Crypto-gram newsletter, 15 Feb 2001&lt;/a&gt;)&lt;/p&gt;
+
+  &lt;p&gt;Online voting depends on the security not only of the systems running the voting process, but also the systems used to vote - and the majority of those systems, home and work PCs and mobile devices in the community are vulnerable to multiple software vulnerabilities.&lt;/p&gt;
+
+  &lt;p&gt;Users of computers fall prey to online deception frequently; a year ago, large numbers of users being tricked into opening a malicious attachment triggered a nationwide outage for Spark, our largest internet provider. (&lt;a href=&quot;http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&amp;amp;objectid=11320100&quot;&gt;NZ Herald: Spark users experience internet meltdown&lt;/a&gt;).&lt;/p&gt;
+
+  &lt;p&gt;With online voting, individual users will be susceptible to a targetted attack, especially when a large number of internet users are attempting an unfamiliar task together. An attacker can falsify apparent voting environments and put those in front of voters, hijacking credentials and then re-using them to make the attackers vote selections on the live system.&lt;/p&gt;
+
+  &lt;p&gt;Attackers would have multiple ways to interfere with online voting - preventing votes, falsifying votes, destroying vote records, or denying access to voting systems. All of these techniques could be used to affect the outcome of an election in various ways.&lt;/p&gt;
+
+  &lt;p&gt;Securing and assuring a secret ballot in a digital environment is a particularly hard issue, and one which many nations and larger organisations than ours have attempted to address and walked away from. Australia experienced a significant security issue; in France faked votes were demonstrated; the Netherlands banned online voting outright as a result; Norway abandoned their attempt; Portugal, Spain and the UK all discontinued their efforts. Washington DC’s trial - an actual trial, not a live test - was hacked within 48 hours. Most security experts agree that this is no easy task, and I see risks but little advantage for us in breaking new ground here.&lt;/p&gt;
+
+  &lt;p&gt;Proponents of online voting claim it may increase engagement - but experience has not shown this is a result to expect. When surveyed about reasons for not voting in recent general elections, NZ voters primary reason was “didn’t get around to it, not interested or forgot”, and disengagement was the underlying cause for 40% of non-voters. (&lt;a href=&quot;http://www.stats.govt.nz/browse_for_stats/people_and_communities/Well-being/civic-human-rights/non-voters-2008-2011-gen-elections.aspx&quot;&gt;Stats NZ: Non-voters in 2008 and 2011 General Elections&lt;/a&gt;)&lt;/p&gt;
+
+  &lt;p&gt;Engagement, not access, is the primary issue for voter turnout. If the council seeks to improve vote turnout, then that is where I believe the council should direct this funding. Again, I do applaud the DCC’s interest in increasing engagement from citizens and in considering this approach.&lt;/p&gt;
+
+  &lt;p&gt;$165,000 to be part of a test with actual council elections is a significant investment, but online voting will carry a much higher pricetag for full implementation.&lt;/p&gt;
+
+  &lt;p&gt;My recommendation is that Dunedin not proceed with the proposed online voting pilot.&lt;/p&gt;
+
+  &lt;p&gt;Thanks for your attention.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Beau Murrah and Stu Fleming also spoke against online voting, and representatives from the NZ Blind Foundation (I think Diane, and another man whose name I forgot) spoke in favour of it on the grounds of how it enables more full representation of all voters. Councillor Wilson identified, I think correctly, that “accessible voting” and “online voting” are separate decisions, but I do appreciate that having had a taste of accessible voting online, the appeal would be great. I hope we’ll see solutions here which don’t require the risks of OV.&lt;/p&gt;
+
+&lt;p&gt;The meeting decision was that Dunedin decided to not continue with the trial, which was the outcome I hoped for. Councillors discussed it in depth and I was glad after following the discussions in other cities to observe that many councillors understood the concerns that informed experts share about moving democratic process online. I was concerned to hear a few flag that cost rather than security was a primary motivator, but learned that in our democratic system, it comes down to how people vote - not why they vote!&lt;/p&gt;
+
+&lt;p&gt;There was some media coverage, but the best moment of my day was getting an unexpected text from my Dad, probably having heard my comments on the radio, saying that he couldn’t agree with me more. That felt great!&lt;/p&gt;
+
+&lt;p&gt;I’m really happy to have taken this first step in engaging with local council - not something I’d aspired to, but it was inspiring and empowering to have an opportunity to be heard by the council members, and to see that they followed what I was saying. And I think that the outcome was a very positive thing for most Dunedin citizens.&lt;/p&gt;
+
+&lt;p&gt;Some related coverage -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.odt.co.nz/news/dunedin/356534/fears-voting-security&quot;&gt;ODT: Fears for online voting security - Chris Morris&lt;/a&gt;. After the last interview a few weeks ago, I managed my habit of double-negative kiwi-isms (“not such a stupid idea” =&amp;gt; “a good idea”). Great!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.radionz.co.nz/news/regional/284835/dunedin-withdraws-from-online-voting-trial&quot;&gt;National Radio NZ: Dunedin Council pulls out of online voting trial - Ian Telfer, on Jim Mora’s Afternoons show&lt;/a&gt;. (Six jurisdictions abandoned the process, but only one &lt;em&gt;banned&lt;/em&gt; it.)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.dunedintv.co.nz/news/dcc-will-not-take-part-nationwide-online-voting-trial&quot;&gt;Channel 9: DCC will not take part in nationwide online voting trial&lt;/a&gt;; bonus points for using “for the LOLz” in a TV interview!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.odt.co.nz/news/dunedin/356656/council-says-no-online-voting-trial&quot;&gt;ODT: Council says no to online voting trial - Craig Borley&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;DCC should put the council meeting on &lt;a href=&quot;https://www.youtube.com/playlist?list=PLFEtwCPmuUfBu_mRafaPANv9GKXkiXjRw&quot;&gt;their YouTube&lt;/a&gt; eventually, should you want to watch the whole thing.&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/dunedin-online-voting-submission/&quot;&gt;Online Voting Trial - submission to Dunedin City Council &amp; outcome&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on September 21, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Archimedes - a tool for tracking Drupal Sites]]></title>
+  <link rel="alternate" type="text/html" href="/archimedes-a-tool-for-tracking-drupal-sites/" />
+  <id>/archimedes-a-tool-for-tracking-drupal-sites</id>
+  <published>2015-09-01T21:36:06+12:00</published>
+  <updated>2015-09-01T21:36:06+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Visited the Drupal Wellington Meetup tonight and did a quick presentation of a couple of integrations we’re using with Archimedes to monitor a network of Drupal sites. Here are my notes on the same, in case anyone wants to look further!&lt;/p&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;Running Archimedes involves setting up an Archimedes server (&lt;a href=&quot;https://github.com/xurizaemon/archimedes_server&quot;&gt;profile&lt;/a&gt;) and installing a copy of the Archimedes module (&lt;a href=&quot;https://github.com/xurizaemon/archimedes&quot;&gt;module&lt;/a&gt;) on each client site. (Run &lt;code&gt;drush pm-update --security-only&lt;/code&gt; on the server at a minimum, since I’ve not been updating the modules in the profile. You might also have to add some Bootstrap libs?)&lt;/p&gt;
+
+&lt;p&gt;You’ll then need to configure each site by copying the &lt;em&gt;Public Key&lt;/em&gt; from the server to each client, and setting the &lt;em&gt;Submission URL&lt;/em&gt; to point to the server’s &lt;code&gt;$base_url&lt;/code&gt; + &lt;code&gt;/archimedes/update&lt;/code&gt;. These details are available from the server at &lt;code&gt;admin/reports/archimedes/settings&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;updates&quot;&gt;Updates&lt;/h2&gt;
+
+&lt;p&gt;Updates will happen daily per default, or whenever you run &lt;code&gt;drush arch-send&lt;/code&gt; on the client site. The server cron will process the incoming submissions via Drupal cron, so you may want to run the Archimedes’s server’s cron task frequently when there are updates in the queue - typically early morning.&lt;/p&gt;
+
+&lt;h2 id=&quot;additional-integrations&quot;&gt;Additional Integrations&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;I’ll publish more about this shortly&lt;/strong&gt;, but we use some additional Drupal Views to expose data over the web to -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hubot&lt;/li&gt;
+  &lt;li&gt;Dashing&lt;/li&gt;
+  &lt;li&gt;Munin&lt;/li&gt;
+  &lt;li&gt;Nagios&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here’s Hubot reporting on which sites use a module, and what versions they have installed. This is helpful on Thursdays, when security updates drop.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/hubot-who-uses-coffee.png&quot; alt=&quot;Who uses $MODULE?&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s Dashing telling us the current state of play on a Thursday, after some core and contrib security updates have shipped. We can click on these numbers to see a (protected) View of which sites need attention.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dashing-updates-pending.png&quot; alt=&quot;Dashing update notification&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I don’t have demo images for these, but we also generate Nagios and Munin config snippets from data gathered in Archimedes, and that lets us monitor site outages, track site load times, and graph additional figures like DB size, user registrations and other indicators of site activity.&lt;/p&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/xurizaemon/archimedes_server&quot;&gt;Archimedes Server&lt;/a&gt;, the server profile.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/xurizaemon/archimedes&quot;&gt;Archimedes&lt;/a&gt;, the client module.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/xurizaemon/archimedes_extras&quot;&gt;Archimedes Extras&lt;/a&gt;, some additional checks you might want to explore :)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://dashing.io/&quot;&gt;Dashing&lt;/a&gt;, an exceptionally handsome dashboarding toolkit.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hubot.github.com/&quot;&gt;Hubot&lt;/a&gt;, your personal robot assistant.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://munin-monitoring.org/&quot;&gt;Munin&lt;/a&gt; and  &lt;a href=&quot;https://www.nagios.org/&quot;&gt;Nagios&lt;/a&gt;, tools to monitor your things.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/andyhmltn/frosty-meadow&quot;&gt;Frosty Meadow&lt;/a&gt;, which I used to bulk-rename our client sites for the purpose of demonstration. I used its &lt;a href=&quot;https://github.com/andyhmltn/frosty-meadow/blob/master/lib/data/metal.json&quot;&gt;metal mode&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;We did a bit of this work, but Catalyst did most of the work with the release of Archimedes v1, which Josh Waihi presented back in 2010 (?) at Drupal Down Under in Brisbane.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/archimedes-a-tool-for-tracking-drupal-sites/&quot;&gt;Archimedes - a tool for tracking Drupal Sites&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on September 01, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[GovHack 2015 NZ Awards!]]></title>
+  <link rel="alternate" type="text/html" href="/govhack-2015-awards/" />
+  <id>/govhack-2015-awards</id>
+  <published>2015-08-17T18:32:00+12:00</published>
+  <updated>2015-08-17T18:32:00+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Sooooo we went to the GovHackNZ awards, and came home with some awards. It was fun! Bit of a delayed update here, on account of a hangover and flights home yesterday.&lt;/p&gt;
+
+&lt;p&gt;GovHackNZ flew us (Vincent Rijlaarsdam, Beau Murrah and I) to Wellington for the NZ awards ceremony at Te Papa this last weekend.&lt;/p&gt;
+
+&lt;p&gt;We arrived and met some of the other teams &amp;amp; organisers - as mentioned previously we were the only team at the Dunedin event so we’d not met any other teams as part of the weekend.&lt;/p&gt;
+
+&lt;p&gt;Several of the projects that I liked most (School Stories, Project Lighthouse and GrocerFree) had been shortlisted, and this was especially good because I got to catch up with &lt;a href=&quot;https://twitter.com/the_nittygritty&quot;&gt;Robin&lt;/a&gt; from GrocerFree there and heard that Hyun-Jin and he were now seven weeks from the due date of their child. That moment was probably the absolute high point, and it was funny that Robin and I had been talking about many other things by email / IRC this year without touching on it.&lt;/p&gt;
+
+&lt;p&gt;Anyway, as you may see from the image above, our weekend’s work earned second place for Best National Team and a National Spirit of GovHack award, as well as (without competition!) the Local Spirit of GovHack award for Dunedin.&lt;/p&gt;
+
+&lt;p&gt;We had a great night, enjoyed meeting the other participants, and felt really boosted by taking away lots of people commenting positively on the concept of the project. In particular Cherie gave some really kind comment when awarding the Spirit of GovHack award, observing - I’m going from memory here -&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A lot of projects focussed on “home and heart”, as it’s clearly a high priority to ensure the best possible place to live, schools to send your children to and so forth.
+This project is one that makes it possible for the average person to go further than those decisions - it enables people to not only understand the legislative process but have an opinion and a say in how the greater decisions are being made and how the country is run.
+It is truly important that everyone has that opportunity, which makes this project a shining example of what the spirit of GovHack really is.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That was … wow, exciting to hear. I had an awesome time, we were very happy to come away with some awards, and are excited about continuing this year’s project &amp;amp; helping make GovHack something bigger next year.&lt;/p&gt;
+
+&lt;p&gt;And this evening I’ve got an email from the Parliamentary Counsel Office (who run &lt;a href=&quot;https://legislation.govt.nz&quot;&gt;legislation.govt.nz&lt;/a&gt;) asking about what we’re doing next, so tomorrow I’ll have to gather some thoughts for that conversation!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/govhack-2015-awards/&quot;&gt;GovHack 2015 NZ Awards!&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on August 17, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Getting TiddlyBot on the wireless]]></title>
+  <link rel="alternate" type="text/html" href="/tiddlybot-alternate-wifi-modules/" />
+  <id>/tiddlybot-alternate-wifi-modules</id>
+  <published>2015-08-01T15:56:40+12:00</published>
+  <updated>2015-08-01T15:56:40+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;a href=&quot;http://www.pibot.org/tiddlybot/&quot;&gt;TiddlyBot&lt;/a&gt; arrived in the mail a week or two back! The boys and I had a fun time assembling it (really simple kit, no breakages) although there was a few days pause when we tried to mount the Pi and realised we needed a v2 Pi not a v1 … &lt;a href=&quot;http://nicegear.co.nz&quot;&gt;nicegear&lt;/a&gt; shipped it quickly and we picked up the next weekend. Once we had it assembled, the AP mode didn’t work out of the box, so I’m writing a quick post on how we got it to work so far.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The TiddlyBot image v1.1 contains hostapd v0.8.x_rtw_r7475.20130812_beta while Debian currently has v1.0; the Pibot crew recommend the Edimax EW-7811Un and confirm it works with a few others. We had a miscellany of wifi devices for pi, all of which have worked out of the box on Raspbian. I didn’t want to wait for another part to ship, so here’s the process I’m using to bring up &lt;code&gt;hostapd&lt;/code&gt; starting with TiddlyBot and a v1.1 image.&lt;/p&gt;
+
+&lt;p&gt;My wifi card is: &lt;code&gt;Bus 001 Device 004: ID 148f:5370 Ralink Technology, Corp. RT5370 Wireless Adapter&lt;/code&gt; - this device requires the &lt;code&gt;nl80211&lt;/code&gt; driver in hostapd.&lt;/p&gt;
+
+&lt;p&gt;The version of hostapd in TiddlyBot v1.1 doesn’t include RT5370 support, so I want to swap in the binary from Debian’s current package of the same without changing Tiddly’s startup configuration by installing the full Debian package.&lt;/p&gt;
+
+&lt;p&gt;My current process is to -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ethernet the device&lt;/li&gt;
+  &lt;li&gt;find Tiddly’s DHCP assigned ethernet IP from the router&lt;/li&gt;
+  &lt;li&gt;ssh into Tiddly&lt;/li&gt;
+  &lt;li&gt;start raspi-config and grow the filesystem (default install is close to 4GB)&lt;/li&gt;
+  &lt;li&gt;reboot, ssh back in&lt;/li&gt;
+  &lt;li&gt;aptitude upgrade all the packages&lt;/li&gt;
+  &lt;li&gt;aptitude install libnl-route-3-200&lt;/li&gt;
+  &lt;li&gt;apt-get download hostapd&lt;/li&gt;
+  &lt;li&gt;dpkg -x the downloaded hostapd .deb to a temp dir&lt;/li&gt;
+  &lt;li&gt;copy the deb’s binaries over the shipped ones in /usr/local/bin&lt;/li&gt;
+  &lt;li&gt;modify /etc/hostapd/hostapd.conf to use the correct driver for this USB wifi&lt;/li&gt;
+  &lt;li&gt;sudo hostapd -dd /etc/hostapd/hostapd.conf to check it works&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If the above process works for you and you can connect to Tiddly over wifi at this point, then the steps to turning the bot on and connecting are still a little longer than “just works”.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ethernet the device, turn it on&lt;/li&gt;
+  &lt;li&gt;ssh in as above&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;sudo service hostapd restart&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;connect to Tiddly wifi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I suspect at this point &lt;code&gt;hostapd&lt;/code&gt; is starting on boot, but works on second / delayed start; I don’t yet know why. Still fiddly but will do for tonight - I have a working TiddlyBot today instead of when a new USB device would have arrived.&lt;/p&gt;
+
+&lt;p&gt;Might not hurt to have hostapd logging to a specific file, that way we have a bit more to look at when things don’t work. I’ve been running it with -dd in a tmux session but not out of the init scripts.&lt;/p&gt;
+
+&lt;p&gt;I’d recommend asking questions on the &lt;a href=&quot;http://pibot.org/forum&quot;&gt;TiddlyBot forum&lt;/a&gt; rather than posting questions as comments here :)&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/tiddlybot-alternate-wifi-modules/&quot;&gt;Getting TiddlyBot on the wireless&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on August 01, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[GovHack 2015: We're Going to Wellington!]]></title>
+  <link rel="alternate" type="text/html" href="/govhack-2015-were-going-to-wellington/" />
+  <id>/govhack-2015-were-going-to-wellington</id>
+  <published>2015-08-01T00:51:11+12:00</published>
+  <updated>2015-08-01T00:51:11+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;My phone rang today - I was home in bed with a cracker of a headache and wearing inflight sleep goggles to shield my brain from the terrible sunlight. An unfamiliar number, Cherie from GovHack calling to tell us that we’d been shortlisted for a national prize as well as winning the regional Spirit of GovHack award.&lt;/p&gt;
+
+&lt;p&gt;(If we picked up the regional award by entering a project &lt;em&gt;at all&lt;/em&gt; because there were no other teams in the South Island, we may owe that to &lt;a href=&quot;https://twitter.com/hackdunedin&quot;&gt;@hackdunedin&lt;/a&gt; for organising the event here - thanks again Phil and Josh! On the other hand, this kicked in the impostor syndrome klaxon: what if turning up was all we really achieved? But I don’t really believe that.)&lt;/p&gt;
+
+&lt;p&gt;Anyway - I’d already booked my tickets figuring that participating in the awards is part of the package, but now all three of us - myself, &lt;a href=&quot;https://twitter.com/vinlew&quot;&gt;Vin&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/airbridgenz&quot;&gt;Beau&lt;/a&gt; - will be able to get to the awards ceremony.&lt;/p&gt;
+
+&lt;p&gt;My motivation to enter was to get to do cool things, meet some other local hackers and work on a team. Being invited to be there for the awards as well is super exciting.&lt;/p&gt;
+
+&lt;p&gt;See also: &lt;a href=&quot;/govhack-2015-legolas/&quot;&gt;post on Legolas&lt;/a&gt; and &lt;a href=&quot;/govhack-2015-my-writeup/&quot;&gt;on being part of GovHack&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/govhack-2015-were-going-to-wellington/&quot;&gt;GovHack 2015: We&#39;re Going to Wellington!&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on August 01, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[CiviCRM Contribute Form JS: Don't Rely on Priceset IDs.]]></title>
+  <link rel="alternate" type="text/html" href="/civicrm-contribute-form-js-dont-rely-on-priceset-ids/" />
+  <id>/civicrm-contribute-form-js-dont-rely-on-priceset-ids</id>
+  <published>2015-07-29T10:32:54+12:00</published>
+  <updated>2015-07-29T10:32:54+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Since a lot of CiviCRM work is around supporter donations / memberships, at Fuzion we end up doing quite a lot of customisation. It’s tempting when writing stylesheets and javascript to depend on the IDs and values provided in the page, but with CiviCRM this can lead to trouble down the track.&lt;/p&gt;
+
+&lt;p&gt;CiviCRM manages price sets internally as a list of values in a DB table, and the assigned IDs for each price option may change if the priceset is edited. This can mean that a client change on a live site breaks a customisation that was previously working, for no reason other than them changing a different price on the same form.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/xurizaemon/905e8363e4ace958ffb5.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Where possible, try to check something which is not one of CiviCRM’s autogenerated IDs relating to the priceset or the priceset value (=id of that price option). The above change is hardly any better - if someone changes “3 years” to “3 yrs” it’ll still break, but at least it’s more tied to the actual criteria we’re checking than an ephemeral id from the database.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/civicrm-contribute-form-js-dont-rely-on-priceset-ids/&quot;&gt;CiviCRM Contribute Form JS: Don&#39;t Rely on Priceset IDs.&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on July 29, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[NZ PHP Conf 2015 Speaker Lineup]]></title>
+  <link rel="alternate" type="text/html" href="/nz-php-conference-2015-speaker-lineup/" />
+  <id>/nz-php-conference-2015-speaker-lineup</id>
+  <published>2015-07-16T20:28:08+12:00</published>
+  <updated>2015-07-16T20:28:08+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;In a few weeks NZ will have it’s second (I think?) PHP conference. The topics look good and it’s one of a few opportunities for NZ PHP developers to get together and learn. I saw a post on a mailing list promoting it today, and thought this would be a good opportunity to get together with other NZ developers and share some knowledge. (I know a few local developers through Codecraft, but it doesn’t feel to me like there’s a &lt;em&gt;community&lt;/em&gt; of PHP devs in Dunedin.)&lt;/p&gt;
+
+&lt;p&gt;So - I headed over to the site, and &lt;a href=&quot;http://2015.phpconference.org.nz/speakers/&quot;&gt;checked out the speakers page to see what was on the cards&lt;/a&gt;, and I found myself thinking twice about going. I opted not to jump on the early bird pricing after all (I’m not saying I won’t still go).&lt;/p&gt;
+
+&lt;p&gt;I reflected a while before posting this, because I’m not confident that it’s for me to speak on diversity at conferences when I’m white &amp;amp; male, and I’m not confident it’s my job to look at a &lt;a href=&quot;http://2015.phpconference.org.nz/speakers/&quot;&gt;set of headshots&lt;/a&gt; and count gender or race. I’m genuinely unsure about this tension; if I’m silent then I may be tacitly enabling the status quo; if I speak out am I “white knighting” or denying someone who is more directly affected by lack of diversity the chance to speak?&lt;/p&gt;
+
+&lt;p&gt;I am OK with sharing my feels (even if/when I’m wrong), and I’m a human goddamnit, and when &lt;em&gt;I&lt;/em&gt; look at the speakers page like that, I boggle at how un-representative of humanity a group of 22 people could possibly be after someone flys them to NZ from around the world.&lt;/p&gt;
+
+&lt;p&gt;I guess this makes me really appreciate the great work that conferences I’ve attended in the last twelve months (Kiwicon, NetHui, OS//OS, DrupalSouth, DevMob) have done towards keeping diversity in mind when they are organised, and I’m intrigued to see how Kiwi PyCon 2015 (same weekend!) will do on the same front. Maybe I’ll diversify myself to a Python conf instead.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/nz-php-conference-2015-speaker-lineup/&quot;&gt;NZ PHP Conf 2015 Speaker Lineup&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on July 16, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[GovHack 2015: Legolas]]></title>
+  <link rel="alternate" type="text/html" href="/govhack-2015-legolas/" />
+  <id>/govhack-2015-legolas</id>
+  <published>2015-07-07T10:32:50+12:00</published>
+  <updated>2015-07-07T10:32:50+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;(see also: &lt;a href=&quot;/govhack-2015-my-writeup/&quot;&gt;GovHack 2015: My writeup&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Law is commonly represented as a rigid “thing” that happens to us, and changes reduced to simple catchphrases that don’t mean the same things that laws say. We become polarised and we are disengaged from taking part in how laws are built.&lt;/p&gt;
+
+&lt;p&gt;Making law a conversation which all citizens can engage in might just enable the kinds of behaviour that open source has demonstrated; open source empowers users to contribute to fix bugs, and open laws can enable citizens to build a better society.&lt;/p&gt;
+
+&lt;p&gt;Laws are a code, and our GovHack project for 2015 seeks to bring citizens onboard as stakeholders.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-it-works-the-concept&quot;&gt;How it works (the concept)&lt;/h2&gt;
+
+&lt;p&gt;Legislation is imported into an environment which supports free and nuanced discussion. This platform aims to provide -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;clarity and visibility to inform citizens,&lt;/li&gt;
+  &lt;li&gt;a discussion model to permit informed public debate,&lt;/li&gt;
+  &lt;li&gt;SCM-style presentation of “fork and submit” to clarify proposed changes to laws,&lt;/li&gt;
+  &lt;li&gt;side-by-side “diff” views of amendments and legislative changes over time,&lt;/li&gt;
+  &lt;li&gt;submission tools to permit community organisations to canvas submissions, and&lt;/li&gt;
+  &lt;li&gt;support for additional data layers to allow all stakeholders to overlay additional information related to legislation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From there, we support various uses of the platform according to different needs -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Susan wants to understand her legal responsibilities as an employer.&lt;/strong&gt; Using Legolas search and comment tools, she can use identify using terms familiar to her (&lt;em&gt;“holiday”, “sick leave”&lt;/em&gt;) and find both specific legislation and citizens experiences on relevant topics.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Bruce and Alice are discussing a technical point of law on social media.&lt;/strong&gt; They can refer to specific aspects of various laws, linking directly to specific clauses of existing legislation as references in their discussion. Legislative changes over time are exposed using a Github-like “diff” interface which clarifies the dates and amendments made to laws.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dave feels that local laws on keeping chickens are unjust.&lt;/strong&gt; He can use Legolas to inform himself of the specifics of poultry law in his region, and to discover that there is already a lively community active around driving change in this area.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Members of a local RSA wish to submit to a bill on pension amendments.&lt;/strong&gt; The platform lets them gather for a meeting and read through the bill as a group, formulating responses to each section. When their input is gathered they can submit their group feedback in a clear format, contextualised alongside the proposed changes.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Rebecca is an MP who wants to better understand how citizens feel about an amendment before the house.&lt;/strong&gt; She can review comments on the existing law over the last few years, and identify contentious and troublesome aspects which need to be addressed in the upcoming debate.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;A lobby group wants to provide a library of legal advice to members.&lt;/strong&gt; The platform provides methods for additional data layers to be displayed in context with legislation, informing citizens of their responsibilities and rights under the law in ways which can be contextualised to their current needs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Bob is a practicing lawyer who refers frequently to criminal law.&lt;/strong&gt; On his mobile device he has an app which exposes Legolas with additional overlays for both case law references retrieved from a popular commercial case law service and his company’s internal team practice notes.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Samwise is a citizen who aims to bring change to existing legislation on small business.&lt;/strong&gt; As well as discussing the law on the platform, he can submit a special form of comment which proposes an amendment to legislation; this is visible to others and can be discussed separately without having any special legal significance.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Legolas is a proposal to support legislative documentation with tools for online engagement of the community - discussion relating to specific legislative “elements”, history as legislation evolves over time, search and crowd-sourced supplementary documentation, and whatever other APIs, extensions, hooks and elements may prove useful over time.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-the-prototype-works-under-the-hood&quot;&gt;How the prototype works (under the hood)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;a &lt;a href=&quot;https://github.com/xurizaemon/legolas&quot;&gt;nodejs importer&lt;/a&gt; which retrieves legislation and does various things with it (commit XML &amp;amp; PDF to Git repo, push XML to storage on Drupal site)&lt;/li&gt;
+  &lt;li&gt;an XSL stylesheet which renders legislation to output formats&lt;/li&gt;
+  &lt;li&gt;a Drupal site (&lt;a href=&quot;https://github.com/xurizaemon/legolas/tree/drupal-7.x&quot;&gt;source&lt;/a&gt;) which as of now supports search, display and commenting&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/govhack-2015-legolas/&quot;&gt;GovHack 2015: Legolas&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on July 07, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[GovHack 2015: my writeup]]></title>
+  <link rel="alternate" type="text/html" href="/govhack-2015-my-writeup/" />
+  <id>/govhack-2015-my-writeup</id>
+  <published>2015-07-05T01:02:50+12:00</published>
+  <updated>2015-07-05T01:02:50+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;GovHack 2015 was a fun weekend.&lt;/p&gt;
+
+&lt;p&gt;We gathered on Friday night at the Sargood Centre in Logan Park - great venue, a large open space for working, and a room full of desks on wheels arranged exactly as you’d expect to find them, especially if you factor in that the students are physed students.&lt;/p&gt;
+
+&lt;p&gt;When I arrived there were two humans (@philwheeler and @vinlew) and a lot of chocolate biscuits.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I decided to jump onboard GovHack for multiple reasons. Firstly, as a hacker with a focus in social / political sphere, it’s right up my alley. Secondly, my work environment has felt pretty isolated of late, and I wanted to do something as part of a team. Thirdly, I wanted a chance to explore some technology that’s outside my regular work tasks.&lt;/p&gt;
+
+&lt;p&gt;So I signed up pretty much immediately on hearing that it was happening in Dunedin, but I wasn’t sure I’d be able to do it until close to the last minute - it all fell together because Saira took leave from work expecting family to visit, and then they couldn’t come at the last minute and I was able to commit my time to the weekend. Fortunate for me!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Friday night, and there were three of us - Phil the organiser, and Vin and I the participants. Vin and I decided we should team up. Great! A team, first objective nailed. We were in a large nautically themed room, and decided to retire to the room full of desks and whiteboards to plan goals. We sketched out a handful of concepts that might work.&lt;/p&gt;
+
+&lt;p&gt;Another participant arrived, Ross; he explained he was just checking it out, and probably wouldn’t commit to the full weekend. (I don’t think he came back.)&lt;/p&gt;
+
+&lt;p&gt;We bounced the ideas around. I can’t remember what the other ideas were, but one of them I put forward was something that had been in my head for a few years, the idea that our legislation should be more open, more of a discussion, more forum and less rulebook. This was at the forefront of my mind after OS//OS in Wellington a few weeks before, where amongst many other inspirational exchanges I saw &lt;a href=&quot;http://ben.balter.com/&quot;&gt;Ben Balter&lt;/a&gt; talk about open government and where it’s going in the U.S.A.&lt;/p&gt;
+
+&lt;p&gt;Huh, I’m rambling and I haven’t even touched on the idea of the project yet. Maybe I should split that out into another post. This is what happened, and it’s late and I’m typing like crazy. (see also: &lt;a href=&quot;/govhack-2015-legolas/&quot;&gt;GovHack 2015: My writeup&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;We bounced ideas around. One seemed to stand out, but I was a bit precious about it since it was an idea that I’d been keeping quite close to my heart for a long time, and I wasn’t sure it was the right thing to burn on a weekend project. Also I’d come in hoping to contribute to someone else’s idea! But … well, we decided to go for it.&lt;/p&gt;
+
+&lt;p&gt;(I don’t think we kept a record of the other ideas.)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;So the basic concept was: &lt;em&gt;A platform for making legislation a conversation.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;What’s that mean? Well, I feel like citizens could engage more in the laws that we are bound by. To me, it seems the reason that “bad” laws stay on the rulebooks so long is that they are not obvious to us. If law was a thing you could check out, look at and discuss, would you feel differently about the laws that affect you? Would laws be written in language that were more accessible to citizens? Would laws change to reflect attitudes more quickly?&lt;/p&gt;
+
+&lt;p&gt;So, while we officially have input into our legislation, the real process is harder than it needs to be for citizens.&lt;/p&gt;
+
+&lt;p&gt;Damnit, I was going to write a separate post on that part.&lt;/p&gt;
+
+&lt;p&gt;So. We picked a goal. We started doing some research and fleshing out concepts. Phil Wheeler gave us some great guidance on how to achieve results over the course of the weekend - identifying the whole set of tasks, which would include making a video and other requirements of entry before the close of play Sunday evening.&lt;/p&gt;
+
+&lt;p&gt;I can’t remember what time we left the Sargood Centre, but I went home and stayed up late, pulling apart some prior works, exploring the government dataset (NZ legislation) we were working with, and knocking together a crawler that could haul it into some platform to host discussion.&lt;/p&gt;
+
+&lt;p&gt;Saturday morning came around, and I was up early and hacking, then took an hour to walk in to Logan Park on the slightly icy roads. Walking helps me think, especially when I haven’t had a full complement of sleep. I reached out to Beau and got him onboard; three is better than two, and Beau’s legal training and perspective brought a lot of useful understanding to what Vin and I had achieved.&lt;/p&gt;
+
+&lt;p&gt;Saturday and Sunday were a whirl. I remember&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;turning up at the venue Sunday before the organisers had it open, tapping away on my laptop.&lt;/li&gt;
+  &lt;li&gt;reluctantly deciding to use Drupal as a content store - turned out it was a fine choice for what we needed it to do, and thanks to existing community contributions (thanks Dan Morrison) came with the tools to handle the legislation XML and output it nicely. (Writing your own XSL is another story, though, and an ongoing one.)&lt;/li&gt;
+  &lt;li&gt;deciding in the last few hours that it was OK to make something with just demo in mind.&lt;/li&gt;
+  &lt;li&gt;Clare Curran visiting us and saying heartwarmingly encouraging things. Thanks Clare!&lt;/li&gt;
+  &lt;li&gt;enjoying hacking in NodeJS a lot.&lt;/li&gt;
+  &lt;li&gt;finding XSL a headfuck.&lt;/li&gt;
+  &lt;li&gt;regretting the choice of project name pretty much from the get-go.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And I learned some interesting things too.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I enjoyed working with NodeJS; I still really like Javascript.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://drupal.org/project/services&quot;&gt;Drupal Services&lt;/a&gt; is pretty cool for remote actions; I’ll be hanging on to this tool.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/drupal-services-api&quot;&gt;Drupal Services API npm package&lt;/a&gt; does a great job.&lt;/li&gt;
+  &lt;li&gt;With legislation whizzing past my eyes, I got to ponder about things like &lt;a href=&quot;https://twitter.com/xurizaemon/status/617244527812722688&quot;&gt;our treatment of undischarged bankrupts&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;I occasionally sat back to keep up via Twitter as other teams nationwide experienced the full gamut of GovHack feels.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And then it was Sunday evening, and we’d turned in a video and made some commits in a repo, and imported a bunch of legislation and served it up, and thrown a site up around that to “sell” the idea, and made friends, and eaten all the chocolate biscuits, and we had to down tools.&lt;/p&gt;
+
+&lt;p&gt;Today it’s the school holidays - I probably won’t have a chance to revisit this for a while, but it was great fun &amp;amp; you should get in on it next year.&lt;/p&gt;
+
+&lt;p&gt;Here’s a &lt;a href=&quot;https://storify.com/xurizaemon/govhack-dunedin-2015&quot;&gt;Storify of our weekend&lt;/a&gt;, probably missing bits.&lt;/p&gt;
+
+&lt;p&gt;Thanks &lt;a href=&quot;https://twitter.com/hackdunedin&quot;&gt;@hackdunedin&lt;/a&gt; for organising it, and Phil Wheeler &amp;amp; Josh Jenkins for all the time you put into helping make it happen for us.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/govhack-2015-my-writeup/&quot;&gt;GovHack 2015: my writeup&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on July 05, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[South Dunedin Flooding]]></title>
+  <link rel="alternate" type="text/html" href="/south-dunedin-flooding/" />
+  <id>/south-dunedin-flooding</id>
+  <published>2015-06-13T00:00:00+12:00</published>
+  <updated>2015-06-13T00:00:00+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;There was a lot of rain, and it flooded. Parts of Dunedin were not built for this - reclaimed swampland wants to be swamp once more.&lt;/p&gt;
+
+&lt;p&gt;I got to see it first hand while sandbagging flooded houses, and it made me angry to see how much housing had been built with disregard for the environment it was being put in - concrete floor pensioner flats at ground level, with not even a door jamb to stop the water.&lt;/p&gt;
+
+&lt;p&gt;My favourite moment of the night was carrying sandbags past an elderly couple, lights on and watching the show happen around them, on the other side of a ranch slider door. They seemed to be having fun, and their recliner chairs were positioned to watch through their glass window, and I hoped they were warm and appreciating a shared moment as I was carrying bags of sand to the houses behind them.&lt;/p&gt;
+
+&lt;p&gt;(You might see a video below this line? If I haven’t stuffed up the embed, and you aren’t blocking content from that site … or it’s &lt;a href=&quot;https://plus.google.com/+ChrisBurgess/posts/LW7n4Cb66Ut&quot;&gt;here&lt;/a&gt; but it’s not all that fancy anyway.)&lt;/p&gt;
+
+&lt;!-- Place this tag in your head or just before your close body tag. --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Place this tag where you want the widget to render. --&gt;
+&lt;div class=&quot;g-post&quot; data-href=&quot;https://plus.google.com/+ChrisBurgess/posts/LW7n4Cb66Ut&quot;&gt;&lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/south-dunedin-flooding/&quot;&gt;South Dunedin Flooding&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on June 13, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Archimedes - Drupal platform for managing Drupal platforms]]></title>
+  <link rel="alternate" type="text/html" href="/archimedes-1/" />
+  <id>/archimedes-1</id>
+  <published>2015-06-13T00:00:00+12:00</published>
+  <updated>2015-06-13T00:00:00+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;When you have Drupal sites you have Drupal updates, and if you have update notification emails turned on then you’ll have lots of notices in your INBOX too.&lt;/p&gt;
+
+&lt;p&gt;At first I thought more informative update notices would help, but it can be a weekly deluge. We used Droptor for a while too, but it was hosted so it only did what was in the box.&lt;/p&gt;
+
+&lt;p&gt;Archimedes allows you to centralise this deluge of notices / “critical business intelligence” into a single website. It allows Drupal sites to report in to a central (Drupal) service which collates info about each site - update notices but also other site data (number of nodes, users; DB, file sizes; etc).&lt;/p&gt;
+
+&lt;p&gt;The site data comes in as nodes for each website and records upgrade status for each module / theme so you can view your sites in cross-section instead of digging through emails -&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;which production sites are reporting views at version less than 7.x-3.11?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Once this data is collected together you can query it much more easily, and make pretty dashboards or chatbot commands to look up useful facts about how bad thursday just got.&lt;/p&gt;
+
+&lt;p&gt;Archimedes was first presented at &lt;a href=&quot;http://2011.drupaldownunder.org/session/archimedes-application-monitoring&quot;&gt;Drupal Down Under 2011&lt;/a&gt; by Josh Waihi, who developed it as an internal tool for Catalyst NZ. I started using it that year and&lt;/p&gt;
+
+&lt;p&gt;HOLY SHIT I NEED TO PUT AUTHENTICATION ON THAT. API key thingyfy it.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/archimedes-1/&quot;&gt;Archimedes - Drupal platform for managing Drupal platforms&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on June 13, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Atom Remote Edit UI & speed of opening remote files]]></title>
+  <link rel="alternate" type="text/html" href="/atom-remote-edit-vs-tramp/" />
+  <id>/atom-remote-edit-vs-tramp</id>
+  <published>2015-04-24T21:28:08+12:00</published>
+  <updated>2015-04-24T21:28:08+12:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;I quite like Atom as an editor - it ticks most of the boxes for an editor I’ll enjoy using. I’ve been using Emacs for a Very Long Time and it’s one of the harder habits to kick in this world.&lt;/p&gt;
+
+&lt;p&gt;Atom has a dialog UI which it seems to encourage - most Atom plugins follow suit and use the same interface to present a list of options. It’s very reminiscent of the sheet that Sublime Text presented for option lists, and maybe in turn that interface came from another editor I don’t recognise.&lt;/p&gt;
+
+&lt;p&gt;I use Tramp in Emacs to open files on remote servers. Sometimes you want to edit a file on a remote server from the editor instance you’re already using. I noticed how much slower this experience seemed to be when using Atom than when using Emacs, so I made a quick screencapture of it and was surprised to see how much longer it really was.&lt;/p&gt;
+
+&lt;p&gt;Note the benefit of tab completion here too - in opening the same file path using Tramp, I made two typos which were corrected so fast I didn’t recall making them until watching the animation play back.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Emacs + Tramp&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/file-open-tramp.gif&quot; alt=&quot;Opening the same file with Tramp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Atom + Remote Edit&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/file-open-remote-edit.gif&quot; alt=&quot;Opening a file with Atom + Remote Edit&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The time to set up the SSH connection is similar both times, but the delay IMO is introduced where Atom’s sheet interface doesn’t have as quick a tab-selection (even though it presents a visual list of options to choose from, a feature Tramp lacks).&lt;/p&gt;
+
+&lt;p&gt;Another interesting observation watching those animations is the time Atom’s Remote Edit spends saying “no matches found”. While the plugin isn’t “selling” anything, the psychology of showing a “no matches found” message while waiting for files to show might be looked into - I expect just changing the message would improve perceived performance. (Brings &lt;a href=&quot;http://www.smashingmagazine.com/2015/11/why-performance-matters-part-2-perception-management/&quot;&gt;this recent article about website experience and perception management&lt;/a&gt; to mind for me.)&lt;/p&gt;
+
+&lt;p&gt;This has also shown me how much I tend to keep a memory of file paths on remote systems; to me the visual interface just slows things down, but I also tend to perceive unexpected layouts as a bit of a bug (mostly this comes up when a predictable structure isn’t kept to consistently). If I didn’t have that internal reference, I’d probably not mind picking from a list each time. As it is, I haven’t the patience!&lt;/p&gt;
+
+&lt;p&gt;Both Atom &amp;amp; its Remote Edit plugin are great tools - thanks @sveale and the Atom team for your work. I’m still flapping between Atom and Emacs on the desktop, but I’ll be sticking with Tramp for this task. Implementing a Tramp style UX on Atom would be a fun project.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/atom-remote-edit-vs-tramp/&quot;&gt;Atom Remote Edit UI &amp; speed of opening remote files&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on April 24, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Trajectory, 2015]]></title>
+  <link rel="alternate" type="text/html" href="/trajectory-2015/" />
+  <id>/trajectory-2015</id>
+  <published>2015-02-19T20:44:00+13:00</published>
+  <updated>2015-02-19T20:44:00+13:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Hi 2015! I’ve got plans for you.&lt;/p&gt;
+
+&lt;p&gt;Life’s good at present - I enjoyed 2014 working with &lt;a href=&quot;https://fuzion.co.nz&quot;&gt;Fuzion Aotearoa&lt;/a&gt;, I’m excited to see what 2015 can bring.&lt;/p&gt;
+
+&lt;p&gt;Workwise I’ve spent a lot of the summer break thinking about our company’s improving our internal systems for collaboration and teamwork - we’re a small distributed team and I’m&lt;/p&gt;
+
+&lt;p&gt;OK so here’s a set of 2015 goals.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Walk _____m / week&lt;/li&gt;
+  &lt;li&gt;Stretch session &lt;em&gt;n&lt;/em&gt; times a week
+*
+*&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here’s a set of intents, things I’m still working out how to make measurable.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Teamwork&lt;/li&gt;
+  &lt;li&gt;Diligence
+*&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;teamwork&quot;&gt;Teamwork&lt;/h2&gt;
+
+&lt;p&gt;I like that 2015 is the Year of the Sheep. Henry tells me “it’s the worst year of the Chinese Zodiac, they hate it over there”. I love &lt;em&gt;Caprinae&lt;/em&gt;, and the isolation of remote work was a big takeaway from 2014 for me (and a driver for focussing on improving our company teamplay). Sheep and goats are about community for me, and one of my goals for this year is being part of an everyday community.&lt;/p&gt;
+
+&lt;h2 id=&quot;diligence&quot;&gt;Diligence&lt;/h2&gt;
+
+&lt;p&gt;Recently I took a day to focus on my professional development trajectory for the year, and as part of the day’s reflection took a walk through the Botanical Gardens. In the flowing waters of the Leith was a forgotten shopping trolley, which I sketched, and ended up with this.&lt;/p&gt;
+
+&lt;p&gt;I have no idea why. Anyway …&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/trajectory-2015/&quot;&gt;Trajectory, 2015&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on February 19, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[2014 Year in review]]></title>
+  <link rel="alternate" type="text/html" href="/2014-year-in-review/" />
+  <id>/2014-year-in-review</id>
+  <published>2015-01-07T11:14:00+13:00</published>
+  <updated>2015-01-07T11:14:00+13:00</updated>
+  <author>
+    <name>Chris Burgess</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;It’s the start of 2015 and I figured why not follow on from the year
+in reviews offered everywhere with my own. Hi! I’m writing this for my
+own reflection more than for public consumption, but sharing it might
+just encourage me to be a bit more engaged. MAYBE.&lt;/p&gt;
+
+&lt;p&gt;At the start of 2015 I’m thinking most about family - we had Christmas
+in Dunedin with Saira’s parents and my brother James visited, but we
+missed being in Auckland with the rest of our families. Living in
+Dunedin puts us further from our siblings and parents, but living here
+means more time for our family nucleus - something we both feel pretty
+strongly about. Times like Christmas throw this choice into pretty
+stark relief though.&lt;/p&gt;
+
+&lt;p&gt;In 2014 I reflected a lot on my career path after some conversations
+with our school principal when she had her regular principal’s
+appraisal. I saw her approach to career which takes a longer term view
+to professional development than I had considered, and wanted to
+establish similar perspective for myself. This forced me to ask
+whether a larger workplace might give more opportunity to learn from
+teammates - currently I’m in a solitary office with a team of four~six
+distributed about NZ, and I sense that I could be learning more FIXME
+“be the lions tail”.&lt;/p&gt;
+
+&lt;p&gt;My approach to this was heavily influenced by a single tweet FIXME
+which I saw from @br3nda while attending FIXME. I value both our
+family’s happy life in Dunedin and my supportive employer, and I
+realised that by doubling down on that commitment and improving my
+existing situation rather than seeking to replace it, I could ramp up
+my learning and improve things for our team.&lt;/p&gt;
+
+&lt;p&gt;I got sunk into improving our processes - something I’d felt strongly
+about since joining the team a year or two ago, but had lacked
+confidence about driving change with, not wanting to impose change
+on a team that I was the newest member of.&lt;/p&gt;
+
+&lt;p&gt;In 2015 I’ll work to strengthen this aspect of my work, and extend it
+into other areas of my life.&lt;/p&gt;
+
+&lt;p&gt;One element of the work environment which I think we’d struggled with
+was a sense of teamplay - making sure that team members are informed
+of changes and the reasons for them, that configurations are
+documented and so forth. My aim was to improve visibility across the
+organisation so that we all had a sense of what the wider team was
+engaged in. This is an ongoing project but I think the results have
+been good for us so far. Over the summer break I’ve taken advantage of
+the quiet time to further improve systems by automating monitoring,
+reporting and informing - aspects of the business infrastructure which
+I think had previously left a lot of the operation “off the radar”.&lt;/p&gt;
+
+&lt;p&gt;Election 2014 was a big part of the year. Being in the engine room of
+the Green Party’s election process also helped inform some of my
+thoughts on teamplay in projects. The election result wasn’t stellar
+but it was the predictable outcome.&lt;/p&gt;
+
+&lt;p&gt;I studied Te Ara Reo Maori level 2 with Te Wananga o Aotearoa, which
+was a really good experience. I recommend the course massively (it was
+a zero-fee course, in the local community rooms with about two dozen
+students). Kia ora Ritchie and Shaun for your great work this year
+… I learned a lot, including a good reminder that being a student
+requires commitment. I came away with much more confidence than I
+started, which was what I hoped to achieve; I don’t think I’ll enrol
+again next year - I’d love to but I want to focus my efforts closer to
+family and work for now.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Election 2014&lt;/li&gt;
+  &lt;li&gt;BoT chair&lt;/li&gt;
+  &lt;li&gt;BCAC rates&lt;/li&gt;
+  &lt;li&gt;Happy teams tweet&lt;/li&gt;
+  &lt;li&gt;NZG computing, wordpress hack&lt;/li&gt;
+  &lt;li&gt;Drupal South 2014
+*&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/2014-year-in-review/&quot;&gt;2014 Year in review&lt;/a&gt; was originally published by Chris Burgess at &lt;a href=&quot;&quot;&gt;Some Words Came Out My Head&lt;/a&gt; on January 07, 2015.&lt;/p&gt;
+  </content>
+</entry>
+
+</feed>
