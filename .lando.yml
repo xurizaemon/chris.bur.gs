@@ -1,0 +1,12 @@
+name: chris
+services:
+  node:
+    type: node
+    via: cli
+config:
+  node: 16
+  command: npm start
+  build:
+    - npm install
+  globals: []
+
