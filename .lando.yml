@@ -1,12 +1,25 @@
-name: chris
+name: chris-blog
+env_file:
+  - .env
 services:
-  node:
+  appserver:
     type: node
-    via: cli
-config:
-  node: 16
-  command: npm start
-  build:
-    - npm install
-  globals: []
-
+    ssl: true
+    port: 3000
+    build:
+      - npm install
+    command:
+      - eleventy --serve --port=3000 --watch
+proxy:
+  appserver:
+    - chris-blog.lndo.site:3000
+tooling:
+  eleventy:
+    service: appserver
+    cmd: eleventy
+  node:
+    service: appserver
+    cmd: node
+  npm:
+    service: appserver
+    cmd: npm
