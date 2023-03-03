@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Unscientific survey of NZ political site performance"
-date: 2013-04-06 02:35
+date: 2013-04-06T02:35:00.007Z
 comments: true
 categories: 
 draft: true

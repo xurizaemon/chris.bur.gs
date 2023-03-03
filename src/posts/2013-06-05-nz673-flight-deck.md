@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "NZ673 flight deck"
-date: 2013-06-05 16:36
+date: 2013-06-05T16:36+12:00
 comments: true
 categories:
 ---

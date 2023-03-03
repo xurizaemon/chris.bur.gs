@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Speedcurve"
-date: 2013-10-11 09:22
+date: 2013-10-11T09:22+12:00
 comments: true
 categories:
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CiviCRM, payment, and processing"
-date: 2013-03-15 00:24
+date: 2013-03-15T00:24+12:00
 comments: true
 categories:
 excerpt: 

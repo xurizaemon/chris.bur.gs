@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CiviCRM, Smarty looking better"
-date: 2013-04-06 00:24
+date: 2013-04-06T00:24+12:00
 comments: true
 categories: 
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Political sites speedtested (again!)"
-date: 2013-07-09 00:36
+date: 2013-07-09T00:36+12:00
 comments: true
 categories:
 ---

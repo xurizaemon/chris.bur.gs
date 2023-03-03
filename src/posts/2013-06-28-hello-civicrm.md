@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hello Pete & CiviCRM."
-date: 2013-06-28 22:41
+date: 2013-06-28T22:41+12:00
 comments: true
 categories:
 published: false

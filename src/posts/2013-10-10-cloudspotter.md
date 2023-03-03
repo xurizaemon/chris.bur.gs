@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cloudspotter"
-date: 2013-10-10 23:38
+date: 2013-10-10T23:38+12:00
 comments: true
 categories:
 ---

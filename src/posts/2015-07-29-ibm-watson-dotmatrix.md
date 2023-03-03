@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "IBM Watson Personality Insights is a horoscope machine at the Victoria Park Markets"
-date: 2014-11-23 18:32
+date: 2014-11-23T18:32+12:00
 comments: true
 tags: [disbelief]
-comments: true
 ---
 Here's what it says about me, based on being fed a randomly handy post from this here blog.
 

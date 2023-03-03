@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Learning where you are"
-date: 2014-11-25 19:20
+date: 2014-11-25T19:20+12:00
 comments: true
 tags: [work, learning]
 ---

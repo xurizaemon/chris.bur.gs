@@ -7,7 +7,6 @@ categories:
 image:
   feature: night-video-south-d-floods.png
   credit: myself
-comments: true
 ---
 
 There was a lot of rain, and it flooded. Parts of Dunedin were not built for this - reclaimed swampland wants to be swamp once more.

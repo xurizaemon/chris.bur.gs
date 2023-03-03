@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Making team-talk a part of everyday work"
-date: 2014-11-23 18:32
+date: 2014-11-23T18:32+12:00
 comments: true
 tags: happyteam
 ---

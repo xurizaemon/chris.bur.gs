@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Just the medicine"
-date: 2013-04-06 00:22
+date: 2013-04-06T00:22+12:00
 comments: true
 categories: 
 ---
