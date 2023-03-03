@@ -5,7 +5,6 @@ date: 2013-04-06T00:24+12:00
 comments: true
 categories:
 draft: true
-categories:
 excerpt:
 tags: []
 image:

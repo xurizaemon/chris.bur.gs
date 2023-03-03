@@ -6,7 +6,7 @@ comments: true
 categories:
 ---
 
-A second survey, to follow [the first unscientific survey of NZ political sites]({% post_url 2013-04-06-unscientific-survey %}). On the eve of the Ikiroa-Rawhiti by-election no less.
+A second survey, to follow [the first unscientific survey of NZ political sites](/posts/2013-04-06-unscientific-survey). On the eve of the Ikiroa-Rawhiti by-election no less.
 
 I'm only following this up out of duty to my past and future selves, you understand. Also, it occurs to me that FPT probably offers a permalink to the report, and I could skip the images copypasta. But hey, consistency?
 

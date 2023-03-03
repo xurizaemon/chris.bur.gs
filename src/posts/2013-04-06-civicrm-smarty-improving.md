@@ -12,6 +12,6 @@ I'd been resistant to CiviCRM's Smarty syntax from days of yore when it was a cr
 
 Well, since Tim asked nicely I figured we should take a look at it. And as it turned out, it wasn't so bad after all. It was still pretty crazy - I didn't look to see what happens on the backend, but we end up with three `crmapi` calls here. It's still Smarty, and it's still CiviCRM.
 
-{% gist 5318647 crmapi-membership-on-contact-summary.tpl %}
+{% gist "https://gist.github.com/xurizaemon/5318647" %}
 
 That worked.
