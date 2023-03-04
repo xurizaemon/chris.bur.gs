@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+    width: 60%;
+    height: auto;
+}
+
+body {
+    background-color: #CFC;
+}
+
+/* xx */

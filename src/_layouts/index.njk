@@ -2,20 +2,14 @@
 siteTitle: Chris Burgess
 layout: base.njk
 ---
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>{{ siteTitle }}</title>
-</head>
-<body>
-<h1>{{ siteTitle }}</h1>
+
+{{ content | safe }}
+
+<div>
 <h2>Posts</h2>
 <ul>
 {% for post in collections.post | reverse %}
   <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
 {% endfor %}
 </ul>
-
-</body>
-</html>
+</div>

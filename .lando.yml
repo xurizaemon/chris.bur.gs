@@ -4,15 +4,16 @@ env_file:
 services:
   node:
     type: node
-    via: apache
-# proxy:
-#   node:
-#     - chris-blog.lndo.site:8080
+    scanner: false
+proxy:
+  node:
+    - chris-blog.lndo.site:80
 config:
   node: 16
   build:
     - npm install
-  globals: []
+  command:
+    - "npm run dev:*"
 tooling:
   eleventy:
     service: node

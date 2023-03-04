@@ -1,21 +1,28 @@
 const fs = require("fs");
-const dumpFilter = require("@jamshop/eleventy-filter-dump");
 const parse = require('csv-parse/sync').parse;
+// const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const pluginTailwindCSS = require("eleventy-plugin-tailwindcss");
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addFilter("debugger", (...args) => {
-    console.log(...args)
-    debugger;
+  eleventyConfig.addWatchTarget('./tailwind.config.js')
+  eleventyConfig.addWatchTarget('./src/styles/main.css')
+  eleventyConfig.addPlugin(pluginTailwindCSS, {
+    src: "src/styles/main.css",
+    dest: ".",
+    keepFolderStructure: false,
+    minify: true
   });
 
   eleventyConfig.addShortcode("gist", function(url) {
     return `<script src="${url}.js"></script>`;
   });
 
-  eleventyConfig.addPlugin(bundlerPlugin);
+  // Copy `src/media/` to `public/media`
+  eleventyConfig.addPassthroughCopy("src/media");
+
+  // eleventyConfig.addPlugin(bundlerPlugin);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
