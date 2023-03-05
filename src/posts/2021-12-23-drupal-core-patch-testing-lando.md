@@ -1,8 +1,10 @@
 ---
 title: "Drupal Core patch testing locally with Lando"
-subtitle: 
+subtitle:
 date: 2021-12-23T11:33:33+13:00
-tags: ["drupal", "contrib"]
+tags:
+    - contribution
+    - drupal
 ---
 
 Testing patches for Drupal core can be fiddly, but it's a process worth making easy so we can better engage in upstream fixes.

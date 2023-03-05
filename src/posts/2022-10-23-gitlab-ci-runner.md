@@ -2,7 +2,9 @@
 title: "Gitlab CI Runner"
 subtitle:
 date: 2022-10-23T17:55:00+13:00
-tags: []
+tags:
+    - catalyst cloud
+    - operations
 gitlab_comments: 19
 ---
 

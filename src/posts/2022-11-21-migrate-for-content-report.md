@@ -1,8 +1,11 @@
 ---
 title: "Using Drupal Migrate to report on content"
-subtitle: 
+subtitle:
 date: 2022-11-21T12:19:56+13:00
-tags: []
+tags:
+  - drupal
+  - drupal migrate
+  - content
 ---
 
 A customer requested a report of:
@@ -48,7 +51,7 @@ if (getenv('MIGRATION_DATABASE_NAME')) {
 I confirmed that I could now see the alternate D7 source data via `drush migrate:status`.
 
 > ### Side quest: performance challenge!
-> 
+>
 > This `drush migrate:status` command was _really really_ slow. In another terminal I connected to the D7 source system and executed `watch -n5 "mysql -uroot -e 'SHOW FULL PROCESSLIST'"` to see what was going on. The query was checking content for regex matches against `%src="/file%`, and sure enough this led me to the Media Migrate plugin and a [performance issue I'd raised 11months ago](https://www.drupal.org/project/media_migration/issues/3209706), which now had a patch. Win!
 
 I didn't want to have to iterate through the entire content set to develop, so I used `drush migrate:import migration_id --limit=1 --migrate-debug` to identify the first node we'd get out of the system. This would become my sacrificial test node, even though it didn't originally contain the tokens in question.

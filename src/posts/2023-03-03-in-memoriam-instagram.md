@@ -1,5 +1,10 @@
 ---
-title: IN MEMORIAM INSTAGRAM
+title: In Memoriam Instagram
+tags:
+  - instagram
+  - instaloader
+  - ffmpeg
+  - digital preservation
 ---
 
 ![envelope](/media/in-memoriam-instagram.jpg)

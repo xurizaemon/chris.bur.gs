@@ -1,8 +1,10 @@
 ---
 title: "Growing Catalyst Cloud Volume"
-subtitle: 
+subtitle:
 date: 2022-10-30T06:35:47+13:00
-tags: []
+tags:
+  - catalyst cloud
+  - operations
 ---
 
 So, I ran up a couple of cloud instances recently, and this week looked back and both had full volumes. Le sigh.
@@ -129,7 +131,7 @@ Then I'll need to move the allocated IP over from the original. Under **Floating
 - Disassociate the existing IP (lol)
 - Associate it to the new instance
 
-This didn't boot up (ok, maybe I did need to run grub, sigh). 
+This didn't boot up (ok, maybe I did need to run grub, sigh).
 
 Couldn't detach the new volume from the new instance to put it back on the old instance. Ugh.
 
@@ -167,7 +169,7 @@ Clone the old partition to the new volume's partition:
 
 ```
 root@deploy-instance:~# dd if=/dev/vda of=/dev/vdb bs=16M status=progress
-10737418240 bytes (11 GB, 10 GiB) copied, 239 s, 44.9 MB/s 
+10737418240 bytes (11 GB, 10 GiB) copied, 239 s, 44.9 MB/s
 640+0 records in
 640+0 records out
 10737418240 bytes (11 GB, 10 GiB) copied, 240.109 s, 44.7 MB/s
@@ -254,7 +256,7 @@ Warning: os-prober will not be executed to detect other bootable partitions.
 Systems on them will not be added to the GRUB boot configuration.
 Check GRUB_DISABLE_OS_PROBER documentation entry.
 done
-root@deploy-instance:/# 
+root@deploy-instance:/#
 exit
 ```
 
@@ -262,7 +264,7 @@ Now detach the new volume and launch a new compute instance, selecting "Volume" 
 
 Yay, and it came up OK! Now I can shelve then later delete the old instance.
 
---- 
+---
 
 This got me thinking about driving built versions of the site from Gitlab CI => Catalyst Cloud Openstack. I know that's what Cove offers but it requires K8s and the config overhead feels pretty big.
 

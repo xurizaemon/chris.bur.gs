@@ -2,7 +2,9 @@
 title: "Update. Your. Shit."
 subtitle: "A horrific recollection"
 date: 2021-09-28T11:05:26+13:00
-tags: ["drupal", "updates"]
+tags:
+    - drupal
+    - updates
 ---
 
 A few years back, I was working on a migration project. A project which shall not be named. Tonight I was reminded of a very particular thing I ran into there.

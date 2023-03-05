@@ -2,7 +2,11 @@
 title: "Testing a fork of Sector distribution"
 subtitle: This is tricky, so here's some notes.
 date: 2021-08-04T00:44:56+12:00
-tags: ["composer", "sector", "fork", "contribution"]
+tags:
+    - composer
+    - sector
+    - fork
+    - contribution
 ---
 
 This is my notes on how to test a fork of Sector. This is tricky because we are using `composer create-project` and Composer needs to recursively resolve package dependencies, and we're testing a change in a required package.

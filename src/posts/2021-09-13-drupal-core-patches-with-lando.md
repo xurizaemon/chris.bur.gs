@@ -1,8 +1,10 @@
 ---
 title: "Drupal Core Patches With Lando"
-subtitle: A quick and easy workflow, it turns out! 
+subtitle: A quick and easy workflow, it turns out!
 date: 2021-09-13T13:55:45+12:00
-tags: ["opensource", "contrib"]
+tags:
+    - contribution
+    - opensource
 ---
 
 I have been working on a tidy setup for contribution using available community tools, and today I needed the same for core. Core patches and Contrib have slightly different workflows.
@@ -76,7 +78,7 @@ PHPUnit has various ways of filtering which tests to run. In this case I had onl
 It's fast :)
 
 ```
-$ lando phpunit core/tests/Drupal/KernelTests/Core/Theme/ConfirmClassyCopiesTest.php 
+$ lando phpunit core/tests/Drupal/KernelTests/Core/Theme/ConfirmClassyCopiesTest.php
 PHPUnit 8.5.19 by Sebastian Bergmann and contributors.
 
 Testing Drupal\KernelTests\Core\Theme\ConfirmClassyCopiesTest

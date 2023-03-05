@@ -1,8 +1,10 @@
 ---
 title: "Catalyst Cloud Instance"
-subtitle: 
+subtitle:
 date: 2022-10-23T17:53:00+13:00
-tags: []
+tags:
+    - catalyst cloud
+    - operations
 gitlab_comments: 19
 ---
 
@@ -11,7 +13,7 @@ These are very brief instructions to get an instance up and running with a recen
 We need to be logged into a Catalyst Cloud account with some available resources. I'm using `test.chc.cat-it.co.nz` here, in region `nz-por-1`.
 
 - Log into [Catalyst Cloud](https://dashboard.cloud.catalyst.net.nz/project/)
-- [Create an SSH key](https://dashboard.cloud.catalyst.net.nz/project/key_pairs) (or you can re-use an existing key of yours) 
+- [Create an SSH key](https://dashboard.cloud.catalyst.net.nz/project/key_pairs) (or you can re-use an existing key of yours)
 - [Create a network](https://dashboard.cloud.catalyst.net.nz/project/networks/)
 	- name = deploy-network
 	- subnet = 192.168.x.0/254
@@ -26,7 +28,7 @@ We need to be logged into a Catalyst Cloud account with some available resources
 	- source = ubuntu-22.04-x86_64
 	- flavor = c1.c2r4
 	- network = deploy-network
-	- security group = 
+	- security group =
 	- ssh key = yours
 	- launch instance
     - associate a floating IP to the instance

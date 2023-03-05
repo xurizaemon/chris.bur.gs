@@ -1,8 +1,11 @@
 ---
 title: "Chaoss Metrics Test Run"
-subtitle: 
+subtitle:
 date: 2022-09-25T16:23:19+13:00
-tags: []
+tags:
+    - contribution
+    - opensource
+    - chaoss
 ---
 
 [CHAOSS Metrics](https://chaoss.community/metrics/) is a series of proposed metrics for a project to assess its health. A metric might be something like "how many clones of this repo were made in the most recent 90 days". Metrics such as these, proposed by CHAOSS for measuring OSS ecosystem health, could be useful for organisations or OSS communities to self-assess. This has the advantage that process doesn't need to be invented by each organisation individually, and that organisations can use a common yardstick to compare success.

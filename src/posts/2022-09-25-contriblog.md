@@ -1,8 +1,10 @@
 ---
 title: "Contriblog"
-subtitle: 
+subtitle:
 date: 2022-09-25T17:26:05+13:00
-tags: []
+tags:
+    - contribution
+    - opensource
 ---
 
 ContribLog ([adaptdk/contrib](https://github.com/adaptdk/contrib)) is a tool for capturing contribution records on the commandline.
@@ -16,7 +18,7 @@ The "contributions.yml" file does not exist yet. Do you want to generate initial
 What is main URL for the organization? https://catalyst.net.nz
 [1/7] Which project received the contribution?
   [0] New project
- > 
+ >
 What is the machine name of the project? (E.g. drupal/migrate_plus): dmore/behat-chrome-extension
 What is the name of the project? (E.g. Migrate Plus): Behat Chrome Extension
 What is the main URL of the project? (E.g. https://www.drupal.org/project/migrate_plus): https://gitlab.com/behat-chrome/behat-chrome-extension
@@ -52,10 +54,10 @@ testing
  > teaching
 [4/7] Who is making the the contribution?
   [0] New person
- > 
+ >
 What is the name of the person? (E.g. José Saramago): Chris Burgess
 What is the identifier for the person? (E.g. Jose): chris
-[5/7] When was the contribution first published? (E.g. 2020-01-22) [default: 2022-09-25]: 
+[5/7] When was the contribution first published? (E.g. 2020-01-22) [default: 2022-09-25]:
 [6/7] How would you describe the contribution? (multiline)
 Use EOL to finish, e.g. Ctrl+D on an empty line to finish input
 Teaching a workshop
@@ -72,13 +74,13 @@ www-data@ea69a85560cf:~$ ./contriblog add
 [1/7] Which project received the contribution?
   [0] New project
   [1] dmore/behat-chrome-extension
- > 
+ >
 ```
 
 And contributions are logged to a local `.yml` file:
 
 ```
-www-data@ea69a85560cf:~$ cat contributions.yml 
+www-data@ea69a85560cf:~$ cat contributions.yml
 organization:
     name: Catalyst IT
     url: 'https://catalyst.net.nz'

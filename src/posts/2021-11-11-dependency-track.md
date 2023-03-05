@@ -2,7 +2,12 @@
 title: "Dependency Track"
 subtitle:
 date: 2021-11-11T08:51:26+13:00
-tags: ["drupal south", "dependency track"]
+tags:
+    - drupal south
+    - dependency track
+    - component analysis
+    - security
+    - talks
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/luwOif1mSmo?start=1290" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

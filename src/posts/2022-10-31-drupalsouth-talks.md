@@ -1,8 +1,11 @@
 ---
 title: "Drupalsouth Talks"
-subtitle: 
+subtitle:
 date: 2022-10-31T11:10:20+13:00
-tags: []
+tags:
+    - drupal
+    - drupal south
+    - talks
 ---
 
 I didn't make it to DrupalSouth this year sadly, but it sounds from some attendee reports like it was a tight conference and the industry is going great over the water. An interesting challenge of this is that Australia is in a hiring frenzy for Drupal folk, and it'll be a challenge for us to compete with that.
