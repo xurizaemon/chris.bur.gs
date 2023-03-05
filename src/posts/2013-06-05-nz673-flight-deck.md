@@ -3,7 +3,6 @@ layout: post
 title: "NZ673 flight deck"
 date: 2013-06-05T16:36+12:00
 comments: true
-categories:
 ---
 
 The lads got invited onto the flight deck of NZ673 by the burser, and met Arjen the pilot.

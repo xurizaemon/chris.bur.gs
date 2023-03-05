@@ -3,7 +3,6 @@ layout: post
 title: "Political sites speedtested (again!)"
 date: 2013-07-09T00:36+12:00
 comments: true
-categories:
 ---
 
 I'm not bored of this yet. I'm just getting started. Trying [WebPageTest.org](http://www.webpagetest.org/) this time to compare results - it isn't quite as pretty but I think it's more detailed.

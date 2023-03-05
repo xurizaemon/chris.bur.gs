@@ -3,7 +3,6 @@ layout: post
 title: "PGP in Parliament."
 date: 2013-06-28T12:34:00.007Z
 comments: true
-categories:
 ---
 
 With greater awareness of the visibility of email content and traffic, I got wondering whether any NZ elected representatives had published PGP keys in order to give the public a means of communicating with some level of privacy.

@@ -3,7 +3,6 @@ layout: post
 title: "Cloudspotter"
 date: 2013-10-10T23:38+12:00
 comments: true
-categories:
 ---
 
 `cloudspotter`

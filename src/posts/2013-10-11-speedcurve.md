@@ -3,7 +3,6 @@ layout: post
 title: "Speedcurve"
 date: 2013-10-11T09:22+12:00
 comments: true
-categories:
 ---
 
 A couple of weeks ago I got to try out Speedcurve, which has just launched today.

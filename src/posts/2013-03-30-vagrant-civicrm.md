@@ -3,13 +3,12 @@ layout: post
 title: "CiviCRM upgrades via Vagrant"
 date: 2013-04-06T00:24+12:00
 comments: true
-categories: 
 draft: true
 ---
 
 The last few weeks I've been working for the NZ Green Party on an update to their CiviCRM DB. I expect a bit of suffering in any CiviCRM upgrade, and I wasn't disappointed. (I accept suffering as inevitable, but that doesn't mean I need to embrace it.)
 
-I wanted to kick off with a recipe which would let me reproducibly bring up upgraded versions of CiviCRM with a fresh copy of the site data. (See @todo Obfuscating CiviCRM test data for more on that.) 
+I wanted to kick off with a recipe which would let me reproducibly bring up upgraded versions of CiviCRM with a fresh copy of the site data. (See @todo Obfuscating CiviCRM test data for more on that.)
 
 (@todo I should write an embargo plugin for Jekyll so I can say `embargo: +3mo` in my post's YAML.)
 

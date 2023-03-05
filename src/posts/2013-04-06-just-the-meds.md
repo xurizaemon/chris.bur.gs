@@ -3,7 +3,6 @@ layout: post
 title: "Just the medicine"
 date: 2013-04-06T00:22+12:00
 comments: true
-categories: 
 ---
 
 For the last several years I've been rigging websites largely for NGOs and dot-orgs who are campaign focussed - typically political or non-govt, and as often as possible lefty liberals who are trying to save the world.

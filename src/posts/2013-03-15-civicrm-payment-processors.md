@@ -4,8 +4,10 @@ title: "CiviCRM, payment, and processing"
 date: 2013-03-15T00:24+12:00
 comments: true
 categories:
-excerpt: 
-tags: []
+excerpt:
+tags:
+  - civicrm
+  - contribution
 image:
   feature:
 ---

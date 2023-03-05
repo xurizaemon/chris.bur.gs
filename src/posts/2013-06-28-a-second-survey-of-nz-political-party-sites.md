@@ -3,7 +3,6 @@ layout: post
 title: "A second survey of NZ political party sites"
 date: 2013-06-28T21:47+12:00
 comments: true
-categories:
 ---
 
 A second survey, to follow [the first unscientific survey of NZ political sites](/posts/2013-04-06-unscientific-survey). On the eve of the Ikiroa-Rawhiti by-election no less.

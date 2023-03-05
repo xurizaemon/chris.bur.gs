@@ -3,7 +3,6 @@ layout: post
 title: "Friday night, delighted."
 date: 2013-06-28T22:41+12:00
 comments: true
-categories: 
 ---
 
 It's Friday night, I'm delighted. Home and quiet, the fire warms the

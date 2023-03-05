@@ -3,7 +3,6 @@ layout: post
 title: "CiviCRM, Smarty looking better"
 date: 2013-04-06T00:24+12:00
 comments: true
-categories: 
 ---
 
 Tim Gummer asked me to look at a template tweak for Natural Areas a few days ago - they wanted to display a little extra contact info (membership type, status, what have you) on the contact summary page.

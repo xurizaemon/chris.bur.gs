@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Blackbird nest & rPi cam"
 modified:
 categories:
