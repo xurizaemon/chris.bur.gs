@@ -4,7 +4,7 @@ subtitle:
 date: 2022-10-31T11:10:20+13:00
 tags:
     - drupal
-    - drupal south
+    - 'drupal south'
     - talks
 ---
 

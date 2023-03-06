@@ -49,7 +49,7 @@ git clone https://github.com/sparksi/sector-project.git sector-project
 
 In `/tmp/sector-project`, modify `composer.json` to add a new local repository entry in the `repositories` key.
 
-```patch
+```diff
 commit ee8af146a1643f3cfce4de6fafe00af77ab227a2 (HEAD -> local-distro)
 Author: Chris Burgess <chris.burgess@catalyst.net.nz>
 Date:   Tue Aug 3 23:44:53 2021 +1200
@@ -90,7 +90,7 @@ index d594d36..20e3bf0 100644
 
 In `/tmp/sector-distribution`, modify `composer.json` to update the patch URL we want to change. (This could be any other change to the local distro codebase.)
 
-```patch
+```diff
 commit a5dd78ffbb61667f5a191467f6d767d980b6f01c (HEAD -> patch-updates)
 Author: Chris Burgess <chris.burgess@catalyst.net.nz>
 Date:   Tue Aug 3 23:47:49 2021 +1200

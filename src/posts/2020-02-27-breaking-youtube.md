@@ -15,7 +15,7 @@ I added a couple of cronjobs to prevent access to certain sites during certain h
 Here's the recipe - nothing special, but it works nicely enough for my needs.
 
 **/etc/cron.d/blocked-sites**
-```cron
+```php
 0 6 * * * pi bash /usr/local/bin/pihole --regex '(^|\.)(googlevideo|snapchat|tiktok|youtube)\.com$'
 0 9 * * * pi bash /usr/local/bin/pihole --regex --delmode '(^|\.)(googlevideo|snapchat|tiktok|youtube)\.com$'
 ```

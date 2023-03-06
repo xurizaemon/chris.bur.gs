@@ -1,8 +1,11 @@
 ---
-title: "Drush Sql Sanitize Config"
+title: "Drush SQL Sanitize Config"
 subtitle: 
 date: 2021-04-13T20:38:45+12:00
-tags: []
+tags:
+    - drush
+    - drupal
+    - config
 ---
 
 A handy snippet to sanitize DB snippets:

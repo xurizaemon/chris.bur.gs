@@ -30,7 +30,7 @@ A few notes on the deployment it brought up. I've only had a brief introduction 
 
 ### Use of `sudo`
 I was a bit uncomfortable with the Makefile prompting me for my system password part way through the process. This doesn't feel like it should be necessary, and is always worth a careful review. On doing so I saw [this code which is triggered from the presence of an environment variable](https://github.com/Islandora-Devops/isle-dc/blob/3261fc9223350aa443b4ea7bfc702ab69636d1de/Makefile#L492) in `.env`:
-```
+```makefile
 CMD := $(shell [ $(IS_DRUPAL_PSSWD_FILE_READABLE) -eq 1 ] && echo 'tee' || echo 'sudo -k tee')
 ```
 It's a little hard to read - I think this is only using `sudo` to read the contents of the file, right? But it makes me nervous seeing `sudo` scattered around as a workaround for correct file permissions configuration, and until I read that carefully I wondered if I could exec something by setting `DRUPAL_DEFAULT_ACCOUNT_PASSWORD` to `"password"; adduser baddie <...>`.

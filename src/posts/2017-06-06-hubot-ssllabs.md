@@ -4,7 +4,12 @@ title: "Hubot SSLLabs"
 modified:
 categories:
 excerpt: hubot, is example.org ssl ok?
-tags: []
+tags:
+    - coffeescript
+    - javascript
+    - hubot
+    - ssllabs
+    - operations
 date: 2017-06-06T20:45:00+13:00
 comments: true
 ---

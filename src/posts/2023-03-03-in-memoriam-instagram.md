@@ -1,13 +1,14 @@
 ---
 title: In Memoriam Instagram
+date: 2023-03-03
 tags:
   - instagram
   - instaloader
   - ffmpeg
   - digital preservation
+header_image: in-memoriam-instagram.jpg
+header_descr: 'Black envelope with painted white letters reading: In Memoriam Instagram'
 ---
-
-![envelope](/media/in-memoriam-instagram.jpg)
 
 Recently helped a friend extract her own Instagram account's images from her hijacked account after it got hacked.
 

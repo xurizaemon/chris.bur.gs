@@ -19,6 +19,7 @@ Number of clones in a time period is available from both Github and Gitlab APIs,
 Trying to extract the data from Gitlab - using Gitlab's [GraphQL explorer](https://gitlab.com/-/graphql-explorer), I don't see this stat available in GraphQL:
 
 ```graphql
+# Query for project details.
 query {
   project(fullPath: "behat-chrome/behat-chrome-extension") {
     id
@@ -34,8 +35,8 @@ query {
 ```
 
 Curl has it:
-```
+```bash
 curl --header "PRIVATE-TOKEN: $GITLAB_TOKEN" https://gitlab.com/api/v4/projects/3329075/statistics
 ```
 
-But, it's forbidden for projects you aren't admin of? Got a 403 for https://gitlab.com/api/v4/projects/278964/statistics (gitlab's repo).
+But, it's forbidden for projects you aren't admin of? Got a 403 for [https://gitlab.com/api/v4/projects/278964/statistics](https://gitlab.com/api/v4/projects/278964/statistics) (gitlab's repo).

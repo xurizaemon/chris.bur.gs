@@ -4,7 +4,10 @@ title: "I'm leaving Fuzion today!"
 modified:
 categories:
 excerpt: Four excellent years come to a close. Thanks!
-tags: []
+tags:
+  - work
+  - fuzion
+  - career
 image:
   feature: fuzion-dunedin.jpg
 date: 2017-06-06T20:45:00+13:00

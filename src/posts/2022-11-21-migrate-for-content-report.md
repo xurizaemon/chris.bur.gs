@@ -122,7 +122,7 @@ class TokenCount extends ProcessPluginBase {
 
 Now I can use my process plugin in the migration:
 
-```
+```yaml
   field_tmp_token_count:
     -
       plugin: token_count
@@ -135,25 +135,24 @@ I could see the matched tokens extracted and stored in the destination field.
 
 Now I could kick off the full migration and let it run. This took two and a half hours.
 
-```
+```text
  [notice] Processed 48046 items (19490 created, 22960 updated, 0 failed, 5596 ignored) in 8539.5 seconds (337.6/min) - done with 'foo_d7_node_resource'
 ```
 
 ## The migration yaml
 
-```
+```yaml
 uuid: 91a9f5db-d4fc-4387-9adc-24d672a89286
 langcode: en
 status: true
 dependencies: {  }
-id: cass_d7_node_resource
+id: foo_d7_node_resource
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Content
-  - CASS
 migration_group: migrate_drupal_7
 label: 'Node (Resource)'
 source:
@@ -206,17 +205,17 @@ destination:
   default_bundle: resource
 migration_dependencies:
   required:
-    - cass_d7_media_document
-    - cass_d7_media_image
-    - cass_d7_media_video
-    - cass_d7_taxonomy_term_author_corporate
-    - cass_d7_taxonomy_term_content_status
-    - cass_d7_taxonomy_term_copyright_licensing
-    - cass_d7_taxonomy_term_region
-    - cass_d7_taxonomy_term_resource_types
-    - cass_d7_taxonomy_term_solr_keywords
-    - cass_d7_taxonomy_term_tags
-    - cass_d7_taxonomy_term_viewpoint
-    - cass_d7_user
-    - cass_embedded_taxonomy_term
+    - foo_d7_media_document
+    - foo_d7_media_image
+    - foo_d7_media_video
+    - foo_d7_taxonomy_term_author_corporate
+    - foo_d7_taxonomy_term_content_status
+    - foo_d7_taxonomy_term_copyright_licensing
+    - foo_d7_taxonomy_term_region
+    - foo_d7_taxonomy_term_resource_types
+    - foo_d7_taxonomy_term_solr_keywords
+    - foo_d7_taxonomy_term_tags
+    - foo_d7_taxonomy_term_viewpoint
+    - foo_d7_user
+    - foo_embedded_taxonomy_term
 ```
