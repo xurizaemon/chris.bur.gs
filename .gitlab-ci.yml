@@ -10,21 +10,23 @@ stages:
   - test
   - pages
 
-test:
-  stage: test
-  script:
+.eleventy:
+  before_script:
     - export PATH=$PATH:./node_modules/.bin
     - npm ci
+  script:
+    - export PATH=$PATH:./node_modules/.bin
     - eleventy --input=src --output=public
+
+test:
+  stage: test
+  extends: [.eleventy]
   rules:
     - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
 
 pages:
   stage: pages
-  script:
-    - export PATH=$PATH:./node_modules/.bin
-    - npm ci
-    - eleventy --input=src --output=public
+  extends: [.eleventy]
   artifacts:
     paths:
       - public
