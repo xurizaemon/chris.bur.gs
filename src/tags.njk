@@ -4,12 +4,17 @@ pagination:
   size: 1
   alias: tag
 permalink: /tags/{{ tag }}/
+layout: base.njk
 ---
-<h1>Tagged “{{ tag }}”</h1>
+<h1 class="my-3 text-3xl font-bold">Tagged “{{ tag }}”</h1>
 
-<ol>
+<div class="prose">
+<p>The following posts are tagged “{{ tag }}”:</p>
+
+<ul>
 {% set taglist = collections[ tag ] %}
 {% for post in taglist | reverse %}
   <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
 {% endfor %}
-</ol>
+</ul>
+</div>

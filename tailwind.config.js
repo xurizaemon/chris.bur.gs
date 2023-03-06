@@ -2,8 +2,14 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   content: [
-    "./src/**/*.{html,njk,md}"
+    "./src/**/*.{html,njk,md,js,css}"
   ],
+  screens: {
+    sm: '480px',
+    md: '768px',
+    lg: '976px',
+    xl: '1440px'
+  },
   theme: {
     colors: {
       // Build your palette here
@@ -16,5 +22,10 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: []
+  safelist: [{
+    pattern: /hljs+/,
+  }],
+  plugins: [
+    require('@tailwindcss/typography')
+  ]
 }
