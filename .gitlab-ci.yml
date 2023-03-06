@@ -16,6 +16,7 @@ stages:
     - npm ci
   script:
     - export PATH=$PATH:./node_modules/.bin
+    - tailwindcss -i ./src/styles/main.css -o ./public/style.css
     - eleventy --input=src --output=public
 
 test:
