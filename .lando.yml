@@ -18,6 +18,9 @@ tooling:
   eleventy:
     service: node
     cmd: eleventy
+  tailwind:
+    service: node
+    cmd: tailwindcss -i ./src/styles/main.css -o ./public/style.css
   node:
     service: node
     cmd: node

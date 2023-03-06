@@ -1,15 +1,27 @@
 ---
-siteTitle: Chris Burgess
+title: Chris Burgess
 layout: base.njk
 ---
-
+<div class="mt-2 text-xl">
 {{ content | safe }}
+</div>
 
 <div>
-<h2>Posts</h2>
+<h2 class="mt-3 text-3xl font-bold">Posts</h1>
 <ul>
 {% for post in collections.post | reverse %}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+  <li class="flex flex-row">
+    <div class="">
+      <a href="{{ post.url }}" class="text-xl font-medium text-black">{{ post.data.title }}</a>
+      {% for tag in post.data.tags | filterTagList %}
+      {% if loop.first %}in{% endif %}
+      {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+      <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}
+      {% endfor %}
+      {% if post.data.tags.length == 1 %}<em class="post-untagged">not tagged</em>{% endif %}
+      {% if post.date %} on {{ post.date | postDate }}{% endif %}
+    </div>
+  </li>
 {% endfor %}
 </ul>
 </div>

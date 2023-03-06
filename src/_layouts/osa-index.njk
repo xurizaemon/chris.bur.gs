@@ -1,0 +1,40 @@
+---
+siteTitle: OSA Projects
+layout: base.njk
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ siteTitle }}</title>
+</head>
+<body>
+<h1>{{ siteTitle }}</h1>
+<h2>Organisations</h2>
+<ul>
+{% for org in collections.organisations | reverse %}
+  <li>
+    <a href="{{ org.url }}">{{ org.data.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+<h2>Projects</h2>
+<ul>
+{% for post in collections.projects | reverse %}
+  <li>
+    <a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.date }}
+  </li>
+{% endfor %}
+</ul>
+
+<h2>Posts</h2>
+<ul>
+{% for post in collections.posts | reverse %}
+  <li>
+    <a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.date }}
+  </li>
+{% endfor %}
+</ul>
+</body>
+</html>

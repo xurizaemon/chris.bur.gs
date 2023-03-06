@@ -1,5 +1,5 @@
 ---
-siteTitle: Chris Burgess
+title: Projects
 layout: base.njk
 ---
 <!doctype html>
@@ -9,9 +9,11 @@ layout: base.njk
     <title>{{ siteTitle }}</title>
 </head>
 <body>
-<h1>{{ siteTitle }}</h1>
+<h1 class="mt-3 text-3xl font-bold">{{ title }}</h1>
 
+<article class="prose mt-4">
 {{ content | safe }}
+</article>
 
 </body>
 </html>
